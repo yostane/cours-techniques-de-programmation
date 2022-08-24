@@ -1,5 +1,5 @@
 site_name: Techniques de programmation
-site_url: https://github.io/yostane/cours-techniques-de-programmation
+site_url: https://yostane.github.io/cours-techniques-de-programmation/
 
 nav:
   - Introduction: index.md
