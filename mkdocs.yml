@@ -4,7 +4,6 @@ site_url: https://github.io/yostane/cours-techniques-de-programmation
 nav:
   - Introduction: index.md
   - POO: poo.md
-  - License: license.md
 
 plugins:
   - search
