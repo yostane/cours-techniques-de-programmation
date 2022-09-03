@@ -13,3 +13,6 @@ tags:
 
 ## Modificateurs de visibilité
 
+## Singleton
+
+## Constructeur (Builder)
