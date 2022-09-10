@@ -22,28 +22,14 @@ tags:
   - `private`: membre utilisable uniquement par sa classe.
   - `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
   - `public`: membres utilisables depuis n'import où.
+- D'autres modificateur peuvent être proposés selon le langage:
+  - `abstract`: rend le membre abstraite
+  - `readonly`: propriété en lecture seule (comme un `const`)
 
 ```ts title="classes"
-class Ship {
-  // En préfixant avec private, public ou protected, l'argument devient une propriété.
-  constructor(protected speed: number) {}
-  move() {
-    console.log("Moving at speed", this.speed);
-  }
-}
-
-const ship = new Ship(200);
-ship.move();
-
-class SpaceShip extends Ship {
-  constructor(speed: number, public staelliteCount: number) {
-    super(speed);
-  }
-}
-
-const spaceShip = new SpaceShip(1000, 5);
-console.log("The space ship has ", spaceShip.staelliteCount, " sattelites");
-
+--8<--
+classes.ts
+--8<--
 ```
 
 ## Classes abstraites et Interfaces
@@ -55,50 +41,22 @@ console.log("The space ship has ", spaceShip.staelliteCount, " sattelites");
 - Une classe (abstraite ou non) peut hériter d'une seule classe (abstraite ou non) et de plusieurs interfaces.
   - :warning: Certaines langages autorisent l'héritage multiple de classes.
 
-```ts
-interface Shooter {
-    readonly shootPower: number;
-    shoot(): void;
-}
-interface Transporter {
-    readonly numberOfPeople: number;
-}
-abstract class Ship {
-    constructor(protected speed: number) {}
-    move(){
-        console.log("Moving at speed", this.speed);
-    }
-}
-
-class SpaceShip extends Ship implements Shooter, Transporter {
-    constructor(speed: number, 
-        readonly staelliteCount: number, 
-        readonly numberOfPeople: number,
-        readonly shootPower: number) {
-        super(speed);
-    }
-    shoot(): void {
-        console.log("Shooting with power", this.shootPower);
-    }
-}
-
-const spaceShip = new SpaceShip(1000, 5, 500, 10);
-spaceShip.shoot();
-console.log("The space ship has ", spaceShip.staelliteCount, " sattelites")
-
-function checkPower(shooter: Shooter) {
-    console.log("The shooter has power of", shooter.shootPower);
-}
-
-checkPower(spaceShip);
+```ts title="Classes abstraites et Interfaces"
+--8<--
+interface_abstract.ts
+--8<--
 ```
 
+## Objets littéraux
 
-## Objets littéraux et anonymes
+- Certains langages permettent de créer des objets sans instancier une classe (non abstraite)
+- Les propriétés et méthodes sont données directement lors de la définition de l'objet.
 
-- Certains langages permettent de créer des obets 
-
-## Modificateurs de visibilité
+```ts title="Objets littéraux"
+--8<--
+literal_object.ts
+--8<--
+```
 
 ## Propriétés et accesseurs
 
