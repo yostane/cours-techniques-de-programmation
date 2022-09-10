@@ -4,7 +4,12 @@ class Ship {
   move() {
     console.log("Moving at speed", this.speed);
   }
+
+  static staticValue = "Hello !";
 }
+
+// static members always exist
+console.log(Ship.staticValue);
 
 const ship = new Ship(200);
 ship.move();

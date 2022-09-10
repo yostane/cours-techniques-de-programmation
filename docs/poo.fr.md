@@ -9,15 +9,17 @@ tags:
 - Un objet contient des membres (propriétés et  méthodes).
 - Un objet peut être créé (ou instancié) de différentes façons:
   - Les techniques communes: Objets littéraux, anonymes ou instanciation à partir d'une classe.
-  - Autres techniques: Singletons,  bâtisseurs (Builders), Injection de dépendances.
+  - Autres techniques: Singletons,  monteurs (Builders), Injection de dépendances.
 
 ## Classes
 
 - Une classe définit l'ensemble des membres ses instances auront.
-- Une classe peut être définie à partir de zéro, ou à partie d'une classe abstraite ou non. Cette technique s'appelle l'héritage.
+- Une classe peut être définie:
+  - A partir de zéro
+  - Ou à partie d'une autre classe. :bulb: Cette technique s'appelle **l'héritage**.
 - Une classe peut aussi implémenter des interfaces.
-- Le constructeur est la première fonction qui est appelée lors de l'instanciation d'un objet.
-  - Certains constructeurs permettent d'initialiser facilement les propriétés.
+- Le **constructeur** est la première fonction qui est appelée lors de l'instanciation d'un objet.
+  - Certains constructeurs permettent d'initialiser les propriétés avec peu de code.
 - Certains langages permettent de définir des modificateurs de visibilité pour ses membres. Voici les plus communs:
   - `private`: membre utilisable uniquement par sa classe.
   - `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
@@ -25,6 +27,7 @@ tags:
 - D'autres modificateur peuvent être proposés selon le langage:
   - `abstract`: rend le membre abstraite
   - `readonly`: propriété en lecture seule (comme un `const`)
+  - `static`: le membre existera tout le temps en un exemplaire accessible avec le nom de la classe
 
 ```ts title="classes"
 --8<--
@@ -60,11 +63,41 @@ literal_object.ts
 
 ## Propriétés et accesseurs
 
+- Une propriété permet d'accéder et / ou modifier une donnée de l'objet avec la syntaxe `objet.propriété`
+- Quand un propriété est utilisée en lecture, l'objet appelle une méthode qui retourne la valeur de la propriété. Cette méthode est appelée **getter**
+- Quand on affecte une valeur à une propriété, l'objet appelle une méthode qui modifie la valeur propriété. Cette méthode est appelée **setter**
+- Les **getters** et **setters** sont appelées **accesseurs**
+- :bulb: Certains langages gèrent nativement les accesseurs
+- Dans la plupart des cas, une propriété repose sur un variable privée de la classe.
+  - :star: On appelle ce genre de champ, un **backing field**
+- Les langages qui gèrent nativement les propriétés utilisent un **backing field** par défaut et nous permettent de personnaliser les accesseurs par la suite.
+- Les langages qui gèrent moins bien les propriétés laissent au développeur le soin de prévoir des méthodes **getPropriété** et **setPropriété** en avance.
+
+```ts title="Propriétés"
+--8<--
+properties_demo.ts
+--8<--
+```
+
+## Singleton et service locator
+
+- La technique du singleton permet de manipuler une instance unique
+- Elle peut être mise en place via une propriété ou méthode statique d'une classe qui retourne la même instance de cette classe
+- :warning: **Le constructeur d'une classe singleton est privé**, pour interdire l'instanciation depuis du code externe
+- Il est aussi possible de centraliser les singletons dans une seule classe qu'on appelle **service locator**
+- Le service locator est préféré car il permet de centraliser la gestion des instances et peut apporter des fonctionnalités communes
+
+```ts title="Propriétés"
+--8<--
+singleton_servicelocator.ts
+--8<--
+```
+
+## Fabrique (Factory) et Monteur (Builder)
+
+- Une **fabrique** est une fonction qui génère des instances de classes.
+- Cela permet de
 
 
-## Singleton
-
-## Constructeur (Builder)
-
-## Exercice
+## Exercices
 
