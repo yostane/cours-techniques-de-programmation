@@ -1,6 +1,6 @@
 ---
 tags:
-  - techniques
+    - techniques
 ---
 
 # La programmation orienté objet
@@ -8,26 +8,26 @@ tags:
 - La poo permet de modéliser sous forme d'objets.
 - Un objet contient des membres (propriétés et  méthodes).
 - Un objet peut être créé (ou instancié) de différentes façons:
-  - Les techniques communes: Objets littéraux, anonymes ou instanciation à partir d'une classe.
-  - Autres techniques: Singletons,  monteurs (Builders), Injection de dépendances.
+    - Les techniques communes: Objets littéraux, anonymes ou instanciation à partir d'une classe.
+    - Autres techniques: Singletons,  monteurs (Builders), Injection de dépendances.
 
 ## Classes
 
 - Une classe définit l'ensemble des membres ses instances auront.
 - Une classe peut être définie:
-  - A partir de zéro
-  - Ou à partie d'une autre classe. :bulb: Cette technique s'appelle **l'héritage**.
+    - A partir de zéro
+    - Ou à partie d'une autre classe. :bulb: Cette technique s'appelle **l'héritage**.
 - Une classe peut aussi implémenter des interfaces.
 - Le **constructeur** est la première fonction qui est appelée lors de l'instanciation d'un objet.
-  - Certains constructeurs permettent d'initialiser les propriétés avec peu de code.
+    - Certains constructeurs permettent d'initialiser les propriétés avec peu de code.
 - Certains langages permettent de définir des modificateurs de visibilité pour ses membres. Voici les plus communs:
-  - `private`: membre utilisable uniquement par sa classe.
-  - `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
-  - `public`: membres utilisables depuis n'import où.
+    - `private`: membre utilisable uniquement par sa classe.
+    - `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
+    - `public`: membres utilisables depuis n'import où.
 - D'autres modificateur peuvent être proposés selon le langage:
-  - `abstract`: rend le membre abstraite
-  - `readonly`: propriété en lecture seule (comme un `const`)
-  - `static`: le membre existera tout le temps en un exemplaire accessible avec le nom de la classe
+    - `abstract`: rend le membre abstraite
+    - `readonly`: propriété en lecture seule (comme un `const`)
+    - `static`: le membre existera tout le temps en un exemplaire accessible avec le nom de la classe
 
 ```ts title="classes"
 --8<--
@@ -42,7 +42,7 @@ classes.ts
 - Une interface liste des membres sans implémentation.
 - Une classe abstraite liste des membres avec ou sans implémentation.
 - Une classe (abstraite ou non) peut hériter d'une seule classe (abstraite ou non) et de plusieurs interfaces.
-  - :warning: Certaines langages autorisent l'héritage multiple de classes.
+    - :warning: Certaines langages autorisent l'héritage multiple de classes.
 
 ```ts title="Classes abstraites et Interfaces"
 --8<--
@@ -69,7 +69,7 @@ literal_object.ts
 - Les **getters** et **setters** sont appelées **accesseurs**
 - :bulb: Certains langages gèrent nativement les accesseurs
 - Dans la plupart des cas, une propriété repose sur un variable privée de la classe.
-  - :star: On appelle ce genre de champ, un **backing field**
+    - :star: On appelle ce genre de champ, un **backing field**
 - Les langages qui gèrent nativement les propriétés utilisent un **backing field** par défaut et nous permettent de personnaliser les accesseurs par la suite.
 - Les langages qui gèrent moins bien les propriétés laissent au développeur le soin de prévoir des méthodes **getPropriété** et **setPropriété** en avance.
 
@@ -96,8 +96,24 @@ singleton_servicelocator.ts
 ## Fabrique (Factory) et Monteur (Builder)
 
 - Une **fabrique** est une fonction qui génère des instances de classes.
-- Cela permet de
+- Un **monteur** est similaire à la fabrique avec la différence que les paramètres sont initialisés sous forme d'une série d'appels.
+    - :bulb: La technique du **chaînage d'appels** est souvent utilisée en complément.
+- Ces techniques permettent de substituer l'implémentation sans avoir à changer le code de récupération d'une instance.
+- Elle permettent aussi de proposer une syntaxe plus concise pour créer des objets complexes.
 
+```ts title="Fabrique et monteur"
+--8<--
+factory_builder_demo.ts
+--8<--
+```
 
 ## Exercices
 
+- Définir une classe 
+
+## Références
+
+- [Patrons de conception de refactoring.guru](https://refactoring.guru/fr/design-patterns)
+- [What is the difference between Builder Design pattern and Factory Design pattern?](https://stackoverflow.com/a/8959150)
+- [howtodoinjava.com](https://howtodoinjava.com/design-patterns/)
+- [TypeScript Getters and Setters from typescripttutorial.net](https://www.typescripttutorial.net/typescript-tutorial/typescript-getters-setters)

@@ -43,15 +43,16 @@ theme:
       accent: green
 
 markdown_extensions:
-  - mdx_truly_sane_lists
-  - def_list
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets:
-      base_path: ["material/poo"]
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
+  - def_list
+  - pymdownx.inlinehilite
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets:
+      base_path: ["material/poo", "material/functional"]
