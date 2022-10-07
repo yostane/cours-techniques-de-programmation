@@ -49,6 +49,12 @@ immutability_demo.ts
 
 ## Programmation déclarative
 
+- La programmation usuelle est appeplée programmation impérative et résout le problème sous forme d'une suite d'instructions qui décrivent comment le programme doit se comporter étape par étape.
+    - La boucle for est un exemple souvent utilisé pour illustrer la programmation impérative.
+- La programmation fonctionnelle décrit le résultat sous d'un enchainements de fonctions.
+- Permet d'exprimer ce que l'on veut obtenir mais pas comment l'obtenir.
+- Les fonctions les plus connues sont: filter, map et reduce.
+
 
 
 ## Sources
