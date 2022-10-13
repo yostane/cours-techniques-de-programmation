@@ -4,7 +4,7 @@ function randomIntFromInterval(min: number, max: number): number {
 }
 
 function createRandomNumbers(): number[] {
-  return [...Array(10).keys()].map((_) => randomIntFromInterval(0, 20));
+  return [...Array(10).keys()].map(() => randomIntFromInterval(0, 20));
 }
 
 const numbers = createRandomNumbers();
@@ -14,6 +14,7 @@ const sum = numbers.reduce((acc, cur) => acc + cur, 0);
 const sumOfDouble = numbers
   .map((x) => x * 2)
   .reduce((acc, cur) => acc + cur, 0);
+const sumOfDouble2 = numbers.reduce((acc, cur) => acc + cur * 2, 0);
 const productOfExponentialEven = numbers
   .filter((x) => x % 2 === 0)
   .map((x) => Math.exp(x))
@@ -53,12 +54,12 @@ class BinaryCalculator {
     a: number,
     b: number,
     success: (x: number) => void,
-    failure: (x: { code: number; message: string }) => void
+    failure?: (x: { code: number; message: string }) => void
   ) {
     const r = this.f(a, b);
     if (r > 10) {
       success(r);
-    } else {
+    } else if (failure !== undefined) {
       failure({
         code: 1,
         message: "Aie aie aie",
@@ -70,17 +71,21 @@ class BinaryCalculator {
 const adder = new BinaryCalculator((x, y) => x + y);
 adder.run(10, 5);
 adder.runWithCallbacks(
-  10,
+  0,
   5,
   (x) => console.log("yahoo ! ", x),
   (e) => console.error("code:", e.code, "message:", e.message)
 );
 
+adder.runWithCallbacks(10, 5, (x) => console.log("yahoo ! ", x));
+
 const minimizer = new BinaryCalculator(Math.min);
 minimizer.run(10, 5);
 minimizer.runWithCallbacks(
-  10,
+  0,
   5,
   (x) => console.log("yahoo ! ", x),
   (e) => console.error("code:", e.code, "message:", e.message)
 );
+
+minimizer.runWithCallbacks(12, 15, (x) => console.log("yahoo ! ", x));
