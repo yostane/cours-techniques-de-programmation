@@ -49,19 +49,34 @@ class BinaryCalculator {
     a: number,
     b: number,
     success: (x: number) => void,
-    failure: (x: number) => void
+    failure: (x: { code: number; message: string }) => void
   ) {
     const r = this.f(a, b);
     if (r > 10) {
       success(r);
     } else {
-      failure(r);
+      failure({
+        code: 1,
+        message: "Aie aie aie",
+      });
     }
   }
 }
 
 const adder = new BinaryCalculator((x, y) => x + y);
 adder.run(10, 5);
+adder.runWithCallbacks(
+  10,
+  5,
+  (x) => console.log("yahoo ! ", x),
+  (e) => console.error("code:", e.code, "message:", e.message)
+);
 
 const minimizer = new BinaryCalculator(Math.min);
 minimizer.run(10, 5);
+minimizer.runWithCallbacks(
+  10,
+  5,
+  (x) => console.log("yahoo ! ", x),
+  (e) => console.error("code:", e.code, "message:", e.message)
+);
