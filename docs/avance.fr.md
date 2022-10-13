@@ -1,4 +1,6 @@
-# Pratiques et styles de développment
+# Pratiques et styles de développement
+
+Nous allons parcourir brièvement quelques pratiques intéressantes.
 
 ## TDD (Test Driven Development)
 

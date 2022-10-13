@@ -83,14 +83,12 @@ imperative_declarative_demo.ts
     -   Le produit des exponentielles des éléments pairs
     -   La plus grande valeur inférieur à la moyenne
 -   Créer une classe `BinaryCalculator` qui prend une fonction en argument du constructeur. Cette fonction prend deux nombres en entrée et retourne un nombre.
-    -   Définir la méthode `run` qui exécute la méthode passée dans le constructeur. Si cette dernière retourne une valeur supérieure à 10, la méthode `run` affiche un message de succès, sinon la méthode `run` affiche un message d'erreur.
+    -   Définir la méthode `run` qui prend deux nombres en argument qu'on appellera `a` et `b` et exécute la méthode passée dans le constructeur en lui passant `a` et `b`. Si cette dernière retourne une valeur supérieure à 10, la méthode `run` affiche un message de succès, sinon la méthode `run` affiche un message d'erreur.
     -   Définir la méthode `runWithCallbacks` qui prend deux fonctions en argument qu'on appellera `success` et `failure` respectivement.
         -   `runWithCallbacks` exécute la méthode passée dans le constructeur. Si cette dernière retourne une valeur supérieure à 10, `success` est appelée en lui passant la valeur calculée, sinon `failure` est appelée en lui passant un message d'erreur.
         -   On vous laisse le soin de définir le type de `success` et `failure` selon le besoin exprimé plus haut.
--   Instancier la classe `BinaryCalculator` pour faire de l'addition de 5 et 1. Appeler les méthodes `run` et `runWithCallbacks`.
--   Instancier la classe `BinaryCalculator` pour faire de l'addition de 5 et un nombre aléatoire entre 0 et 10. Appeler les méthodes `run` et `runWithCallbacks` plusieurs fois.
--   Instancier la classe `BinaryCalculator` pour calcule le minimum entre 5 et 20. Appeler les méthodes `run` et `runWithCallbacks`.
--   Instancier la classe `BinaryCalculator` pour calcule le minimum entre 15 et 20. Appeler les méthodes `run` et `runWithCallbacks`.
+-   Instancier la classe `BinaryCalculator` pour faire de l'addition. Appeler les méthodes `run` et `runWithCallbacks` pour les arguments 5 et 1. Appeler les méthodes `run` et `runWithCallbacks` plusieurs fois pour faire de l'addition de 5 et un nombre aléatoire entre 0 et 10.
+-   Instancier la classe `BinaryCalculator` pour calcule le minimum. Appeler les méthodes `run` et `runWithCallbacks` pour les arguments 5 et 20 puis pour 15 et 20.
 
 ## Sources
 
