@@ -22,6 +22,9 @@ const avg = sum / numbers.length;
 const beforeAvg = numbers
   .filter((x) => x < avg)
   .reduce((acc, cur) => Math.max(acc, cur), -Infinity);
+const beforeAvg2 = numbers
+  .filter((x) => x < avg)
+  .reduce((acc, cur) => (acc > cur ? acc : cur), -Infinity);
 console.log(
   "sum",
   sum,
@@ -32,7 +35,8 @@ console.log(
   "avg",
   avg,
   "beforeAvg",
-  beforeAvg
+  beforeAvg,
+  beforeAvg2
 );
 
 class BinaryCalculator {
