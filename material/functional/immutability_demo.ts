@@ -14,7 +14,7 @@ class Kebab {
   constructor(
     readonly name: string,
     readonly sauce: Sauce,
-    ingredients: readonly string[]
+    readonly ingredients: readonly string[]
   ) {}
 }
 
