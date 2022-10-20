@@ -128,11 +128,12 @@ factory_builder_demo.ts
 - Créer une factory `createCrossPlatformVideoGame` pour créer des jeux dont les plateformes sont `DegaDrive`, `Satourne`, `Super Nontendo`, `Nontendo`.
 - Créer une liste `retroGames` qui contient 1 jeu pour "DegaDrive", un jeu pour "Super Nontendo" et un jeu cross-platform. Le choix du `name`, `releaseYear` est libre pour chaque jeu.
 
-```ts title="Fabrique et monteur"
---8<--
-solution_poo_exercise.ts
---8<--
-```
+??? solution
+    ```ts
+    --8<--
+    solution_poo_exercise.ts
+    --8<--
+    ```
 
 ## Références
 
