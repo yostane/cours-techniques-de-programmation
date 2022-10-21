@@ -15,3 +15,4 @@ jobs:
       - run: pip install mkdocs-static-i18n
       - run: pip install mdx_truly_sane_lists
       - run: mkdocs gh-deploy --force
+      - run: pip install mkdocs-glightbox

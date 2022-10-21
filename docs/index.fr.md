@@ -5,6 +5,10 @@ tags:
 
 # Bienvenue au cours "Maitrise des techniques de programmation"
 
+<figure markdown>
+  ![logo](img/logo.jpg)
+</figure>
+
 [![made with](https://img.shields.io/badge/made%20with-mkdocs%20material-yellowgreen)](https://squidfunk.github.io/mkdocs-material/)
 
 ## Introduction

@@ -20,6 +20,7 @@ nav:
 
 plugins:
   - search
+  - glightbox
   - tags:
       tags_file: tags.md
   - i18n:
@@ -31,6 +32,8 @@ plugins:
           build: true
 
 theme:
+  logo: img/logo.jpg
+  favicon: img/logo.jpg
   name: material
   features:
     - navigation.top
@@ -59,6 +62,7 @@ markdown_extensions:
   - def_list
   - pymdownx.inlinehilite
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
