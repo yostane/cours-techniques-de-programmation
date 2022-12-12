@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/avance/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/avance/"/>
+         
+    </url>
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/func/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/func/"/>
+         
+    </url>
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/generalites/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/generalites/"/>
+         
+    </url>
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/"/>
+         
+    </url>
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/poo/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/poo/"/>
+         
+    </url>
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/projet/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/projet/"/>
+         
+    </url>
+    <url>
+         <loc>https://yostane.github.io/cours-techniques-de-programmation/tags/</loc>
+         <lastmod>2022-12-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://yostane.github.io/cours-techniques-de-programmation/fr/tags/"/>
+         
+    </url>
+</urlset>
