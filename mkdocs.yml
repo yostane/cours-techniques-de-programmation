@@ -32,6 +32,7 @@ plugins:
           build: true
 
 theme:
+  custom_dir: overrides
   logo: img/logo.jpg
   favicon: img/logo.jpg
   name: material

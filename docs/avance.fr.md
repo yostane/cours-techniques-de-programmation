@@ -1,3 +1,9 @@
+---
+comments: true
+tags:
+    - techniques
+---
+
 # Pratiques et styles de développement
 
 Nous allons parcourir brièvement quelques pratiques intéressantes.

@@ -1,4 +1,5 @@
 ---
+comments: true
 tags:
     - techniques
     - fonctionnel
@@ -9,6 +10,7 @@ tags:
 La programmation fonctionnelle s'articule autour de [ces concepts](https://www.geeksforgeeks.org/functional-programming-paradigm) : fonctions pures, récursivité, transparence référentielle, variables immuables, fonctions en tant que citoyens de première classe et fonctions d'ordre supérieur.
 
 !!! important "Programmation fonctionnelle pure"
+
     Les langages fonctionnels qualifiés de _pures_ comme [haskell](https://www.haskell.org/) n'admettent que la programmation fonctionnelle.
 
 ## Immutabilité
@@ -27,7 +29,7 @@ La programmation fonctionnelle s'articule autour de [ces concepts](https://www.g
 -   La modification d'un objet immutable se fait sur une **copie profonde**. Cette dernière peut être réalisée en une seule ligne ou _à la main_ (en copiant les champs un par un), selon le langage utilisé.
 
 !!! attention "Limite avec les fonctions de clonage profond"
-    Les fonctions de clonage profond qui ne permettent pas de spécifier les propriétés à modifier ne sont pas utiles car elles génèrent une copie conforme à l'original qu'on ne pourra plus modifier.
+Les fonctions de clonage profond qui ne permettent pas de spécifier les propriétés à modifier ne sont pas utiles car elles génèrent une copie conforme à l'original qu'on ne pourra plus modifier.
 
 ```ts title="Immutabilité"
 --8<--
@@ -91,12 +93,12 @@ imperative_declarative_demo.ts
 -   Instancier la classe `BinaryCalculator` pour calcule le minimum. Appeler les méthodes `run` et `runWithCallbacks` pour les arguments 5 et 20 puis pour 15 et 20.
 
 ??? solution
+
     ```ts
     --8<--
     solution_functional_exercises.ts
     --8<--
     ```
-
 
 ## Sources
 
