@@ -12,7 +12,12 @@ extra:
 nav:
   - Introduction: index.md
   - Généralités: generalites.md
-  - POO: poo.md
+  - POO:
+    - poo/index.md
+    - Caractéristiques: poo/caracteristiques.md
+    - Patrons de conception: poo/patrons.md
+    - Compléments et références: poo/exos.md
+    - Exercices: poo/exos.md
   - Programmation fonctionnelle: func.md
   - Pratiques et styles: avance.md
   - Mini-projet: projet.md
@@ -21,15 +26,6 @@ nav:
 plugins:
   - search
   - glightbox
-  - tags:
-      tags_file: tags.md
-  - i18n:
-      material_alternate: true
-      default_language: fr
-      languages:
-        fr:
-          name: Français
-          build: true
 
 theme:
   custom_dir: overrides
@@ -38,6 +34,7 @@ theme:
   name: material
   features:
     - navigation.top
+    - navigation.indexes
   icon:
     repo: fontawesome/brands/github
   palette:
