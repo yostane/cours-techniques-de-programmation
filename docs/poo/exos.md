@@ -19,7 +19,8 @@
 -   Créer une liste `retroGames` qui contient 1 jeu pour "DegaDrive", un jeu pour "Super Nontendo" et un jeu cross-platform. Le choix du `name`, `releaseYear` est libre pour chaque jeu.
 
 ??? solution
-`ts
+
+    `ts
     --8<--
     solution_poo_exercise.ts
     --8<--
