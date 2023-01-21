@@ -86,3 +86,5 @@ classes.ts
 ```
 
 ## Exercice
+
+Définir une classe `Meuble` qui prend deux
