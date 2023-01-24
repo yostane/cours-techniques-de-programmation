@@ -98,5 +98,10 @@ classes.ts
 - L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des   donc on écrira `Hydra extends Monster`. 
     - Donner des exemples de relation d'héritage.
     - Trouver les relations d'héritage possibles: 
-        - être viviant, homme, animal.
+        - Être vivant, homme, animal
         - Meuble, fauteuil, Armoire, Table, Jardin
+        - Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
+- Essayer de trouver ou d'inventer une classe parent commune (qu'on appelle aussi classe mère) pour ces classes:
+    - Ordinateur portable, ordinateur fixe
+    - Ordinateur portable, ordinateur fixe, Switch, Xbox, Playstation
+    - Voiture, Camion, Vélo, Trotinette
