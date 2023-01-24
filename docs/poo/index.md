@@ -70,13 +70,13 @@ Dans le code donné plus haut, identifier avec des commentaires les parties qui 
 -   Une classe peut aussi implémenter des interfaces.
 -   Le **constructeur** est la première fonction qui est appelée lors de l'instanciation d'un objet.
     -   Certains constructeurs permettent d'initialiser les propriétés avec peu de code.
--   Certains langages permettent de définir des modificateurs de visibilité pour ses membres. Voici les plus communs:
+-   Certains langages permettent de définir des **modificateurs de visibilité** pour ses membres. Voici les plus communs:
     -   `private`: membre utilisable uniquement par sa classe.
     -   `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
     -   `public`: membres utilisables depuis n'import où.
 -   D'autres modificateur peuvent être proposés selon le langage:
     -   `abstract`: rend le membre abstrait
-    -   `readonly`: propriété en lecture seule (comme un `const`)
+    -   `readonly`: propriété publique en lecture seule (comme un `const`)
     -   `static`: le membre existera tout le temps en un exemplaire accessible avec le nom de la classe
 
 ```ts title="Définition de deux classes dont une qui hérite de l'autre"
@@ -85,9 +85,18 @@ classes.ts
 --8<--
 ```
 
-## Exercice
+## Exercices
 
-- Définir une classe `Book` avec les propriétés suivantes: nbPages, auteur, isbn.
+- Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, markedPage: number, author: number, isbn: number`.
+    - Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
     - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres.
-    - Est-ce que les `Book` peuvent exister indépendamment de `Library` ?
-- L'héritage est une relation "est". Par exemple, une `Hydra` (hydre)  est une monstre donc on écrira `Hydra extends Monster`. Donner des exemples de relation d'héritage.
+    - Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs. 
+    - Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres. 
+    - Instancier une `Library` avec trois livres 
+    - Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
+    - Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
+- L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des   donc on écrira `Hydra extends Monster`. 
+    - Donner des exemples de relation d'héritage.
+    - Trouver les relations d'héritage possibles: 
+        - être viviant, homme, animal.
+        - Meuble, fauteuil, Armoire, Table, Jardin
