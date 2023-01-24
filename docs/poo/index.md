@@ -87,7 +87,7 @@ classes.ts
 
 ## Exercices
 
-- Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, markedPage: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)).
+- Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et en `private`: `markedPage: number`.
     - Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
     - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres.
     - Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs. 
@@ -95,7 +95,7 @@ classes.ts
     - Instancier une `Library` avec trois livres 
     - Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
     - Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
-- L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des   donc on écrira `Hydra extends Monster`. 
+- L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des `Character`   donc on écrira `Hydra extends Monster`. 
     - Donner des exemples de relation d'héritage.
     - Trouver les relations d'héritage possibles: 
         - Être vivant, homme, animal
