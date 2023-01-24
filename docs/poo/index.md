@@ -87,7 +87,7 @@ classes.ts
 
 ## Exercices
 
-- Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, markedPage: number, author: number, isbn: number`.
+- Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, markedPage: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)).
     - Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
     - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres.
     - Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs. 
