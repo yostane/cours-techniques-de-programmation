@@ -51,7 +51,7 @@ Quels avantages et inconvénients voyez-vous dans ce code ?
 
 ### Exercice
 
-Dans le code suivant, identifier les parties du code qui effectuent les opération suivantes: instanciation d'objet, définition d'une classe, définition d'une propriété, définition d'une méthode et appel d'une méthode.
+Dans le code donné plus haut, identifier les parties du code qui effectuent les opération suivantes: instanciation d'objet, définition d'une classe, définition d'une propriété, définition d'une méthode et appel d'une méthode.
 
 ??? "Solution"
 
