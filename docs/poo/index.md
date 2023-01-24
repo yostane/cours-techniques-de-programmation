@@ -95,7 +95,7 @@ classes.ts
     - Instancier une `Library` avec trois livres 
     - Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
     - Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
-- L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des `Character`   donc on écrira `Hydra extends Monster`. 
+- L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des `Character` donc on écrira `Human extends Character` et `Monster extends Character`. 
     - Donner des exemples de relation d'héritage.
     - Trouver les relations d'héritage possibles: 
         - Être vivant, homme, animal
