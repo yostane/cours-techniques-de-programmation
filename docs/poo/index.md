@@ -89,7 +89,7 @@ classes.ts
 
 - Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et en `private`: `markedPage: number`.
     - Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
-    - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres.
+    - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres. ⚠ Il une relation entre `Library` et `Book` mais ce n'est pas une relation d'héritage. Pour ce cas, on dit que c'est une **agrégation**.
     - Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs. 
     - Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres. 
     - Instancier une `Library` avec trois livres 
