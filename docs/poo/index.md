@@ -87,4 +87,7 @@ classes.ts
 
 ## Exercice
 
-Définir une classe `Meuble` qui prend deux
+- Définir une classe `Book` avec les propriétés suivantes: nbPages, auteur, isbn.
+    - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres.
+    - Est-ce que les `Book` peuvent exister indépendamment de `Library` ?
+- L'héritage est une relation "est". Par exemple, une `Hydra` (hydre)  est une monstre donc on écrira `Hydra extends Monster`. Donner des exemples de relation d'héritage.
