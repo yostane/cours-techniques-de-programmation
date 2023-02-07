@@ -18,6 +18,7 @@ nav:
     - Patrons de conception: poo/patrons.md
     - Compléments et références: poo/further.md
     - Exercices: poo/exos.md
+    - Mini projet: poo/projet.md
   - Programmation fonctionnelle: func.md
   - Pratiques et styles: avance.md
   - Mini-projet: projet.md
