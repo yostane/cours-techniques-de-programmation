@@ -2,11 +2,15 @@
 
 ## Enoncé
 
-Développer une application de type CRUD (Create, Read, Update, Delete) qui permet de manipuler une collection de données. Les données sont définies par des classes qui ont une classe mère commune.
+Développer une application de type CRUD (Create, Read, Update, Delete) qui permet de manipuler une collection de données.
+Les données sont définies par des classes qui ont une classe mère commune.
+Le thème est de votre choix (par exemple: tchat, e-commerce, etc.).
 
 L'application propose de lancer une méthode surchargée sur une donnée choisie par l'utilisateur.
 
 Il est aussi demander d'implémenter un filtrage en utilisant les interfaces.
+
+Au niveau de l'interaction avec l'utilisateur, vous êtes libres du choix (interface graphique, application console, etc.)
 
 ## Eléments requis
 
