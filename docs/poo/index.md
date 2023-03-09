@@ -125,9 +125,9 @@ Essayer de trouver ou d'inventer une classe parent commune (qu'on appelle aussi 
 
 On souhaite représenter des montres et les personnes qui les portent.
 
-Une montre donne l'heure et les minutes. On peut initialiser une montre soit à partir d'un couple heure/minute donné, soit par clonage (à partir d'une autre montre). Il doit être possible de faire avancer l'heure d'une montre en ajoutant une minute (attention, les minutes sont limitées à 60 et les heures à 24).
+Une montre donne l'heure et les minutes. On peut initialiser une montre soit à partir d'un couple heure/minute donné, soit par clonage (en créant une nouvelle montre à partir d'une montre existante). Il doit être possible de faire **avancer** l'heure d'une montre en ajoutant une minute (attention, les minutes sont limitées à 60 et les heures à 24).
 
-Une personne a un nom et peut éventuellement porter une montre. On peut faire porter une montre donnée à une personne, si elle n'en a pas déjà une. On peut aussi lui enlever sa montre si elle en a une. Une personne peut demander l'heure à une autre, qui lui donne l'heure sous forme d'une chaine de caractères, en consultant sa montre si elle en a une (sinon elle peut retourner une chaine vide).
+Une personne a un nom et peut éventuellement porter une montre. Une personne peut **porter** une montre donnée, si elle n'en a pas déjà une. Elle peut aussi **enlever** sa montre si elle en a une. Une personne peut **demander l'heure** à une autre, qui lui donne l'heure sous forme d'une chaine de caractères, en consultant sa montre si elle en a une (sinon elle peut retourner une chaine vide).
 
 1. Écrivez une classe qui représente les montres telles que décrites ci-dessus.
 1. Créer une montre affichant 13h45 et une autre montre qui est un clone de la première.
