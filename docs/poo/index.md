@@ -131,6 +131,27 @@ Une personne a un nom et peut éventuellement porter une montre. On peut faire p
 1. On veut faire en sorte que chaque montre ne soit portée que par une seule personne. Proposer des ajouts/modifications des deux classes précédentes pour garantir cela.
 1. Dorénavant, une personne peut porter une montre qui peut être mécanique ou numérique. En utilisant l'héritage, modifier le programme pour prendre ce cas en compte.
 
+### Exercice 5
+
+On veut réaliser un programme de gestion des recettes de cuisine. La classe `Ingredient` contient ces membres:
+
+-   `name`, `state` et `unit` de type `string`
+-   `quantity` de type `number`
+-   Le constructeur initialise les propriétés ci-dessus via 4 arguments qui lui seront passés.
+
+L'état d'un ingrédient (son `state`) peut être: `cooked` (cuit), `raw` (cru), `whole` (entier), ou `cut` (découpé) ou une combinaison de ces états (par exemple cuit et entier). L'unité peut être une unité de poids (`g`, `kg`, etc), de volume (`l`, `ml`, `cl`) ou simplement une `cadrinality` (cardinalité ou nombre de pièces).
+
+La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une liste d'ingrédients. On doit pouvoir créér un plat avec son nom.
+
+1. Définir les classe `Ingredient` et `Dish`
+1. Créer un plat appelé choucroute contenant comme ingrédients : 500g de choucroute cuite, 150g de lard cuit et entier et 2 saucisses entières et cuites
+1. On veut pouvoir comparer les plats et donc leurs ingrédients. Ajoutez une méthode `equals` dans la classe Ingrédient qui renvoie true si deux ingrédients ont le même nom d'aliment et le même état (pas forcément la même quantité).
+1. Ajoutez une méthode `equals` dans la classe Plat, qui renvoie true si deux plats contiennent les mêmes ingrédients, au sens donné juste avant.
+1. On veut faire la distinction entre les ingrédients qu'on peut cuire et ceux qu'on peut découper. Un ingrédient qu'on peut cuire doit avoir une méthode `cook()` qui le fait passer dans l'état `cooked` et une température de cuisson. Un ingrédient qu'on peut découper doit avoir une méthode `cut()` qui le fait passer dans l'état `cut`.
+    - En utilisant uniquement l'héritage, proposer une solution à ce problème
+    - En utilisant utilisant l'héritage et les interfaces, proposer une solution alternative à ce problème
+    - Laquelle des deux solutions vous semble la meilleure ?
+
 ## Sources et références
 
 -   [Exercices de Programmation Orientée Objet en Java - MIS](https://home.mis.u-picardie.fr/~furst/docs/exercicesPOO.pdf)
