@@ -87,21 +87,50 @@ classes.ts
 
 ## Exercices
 
-- Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et en `protected`: `markedPage: number`.
-    - Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
-    - Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres. ⚠ Il une relation entre `Library` et `Book` mais ce n'est pas une relation d'héritage. Pour ce cas, on dit que c'est une **agrégation**.
-    - Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs. 
-    - Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres. 
-    - Instancier une `Library` avec trois livres 
-    - Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
-    - Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
-- L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des `Character` donc on écrira `Human extends Character` et `Monster extends Character`. 
-    - Donner des exemples de relation d'héritage.
-    - Trouver les relations d'héritage possibles: 
-        - Être vivant, homme, animal
-        - Meuble, fauteuil, Armoire, Table, Jardin
-        - Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
-- Essayer de trouver ou d'inventer une classe parent commune (qu'on appelle aussi classe mère) pour ces classes:
-    - Ordinateur portable, ordinateur fixe
-    - Ordinateur portable, ordinateur fixe, Switch, Xbox, Playstation
-    - Voiture, Camion, Vélo, Trotinette
+### Exercice 1
+
+Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et en `protected`: `markedPage: number`.
+
+-   Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
+-   Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres. ⚠ Il une relation entre `Library` et `Book` mais ce n'est pas une relation d'héritage. Pour ce cas, on dit que c'est une **agrégation**.
+-   Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs.
+-   Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres.
+-   Instancier une `Library` avec trois livres
+-   Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
+-   Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
+
+### Exercice 2
+
+L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des `Character` donc on écrira `Human extends Character` et `Monster extends Character`.
+
+-   Donner des exemples de relation d'héritage.
+-   Trouver les relations d'héritage possibles:
+    -   Être vivant, homme, animal
+    -   Meuble, fauteuil, Armoire, Table, Jardin
+    -   Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
+
+### Exercice 3
+
+Essayer de trouver ou d'inventer une classe parent commune (qu'on appelle aussi classe mère) pour ces classes:
+
+-   Ordinateur portable, ordinateur fixe
+-   Ordinateur portable, ordinateur fixe, Switch, Xbox, Playstation
+-   Voiture, Camion, Vélo, Trottinette
+
+### Exercice 4
+
+On souhaite représenter des montres et les personnes qui les portent.
+
+Une montre donne l'heure et les minutes. On peut initialiser une montre soit à partir d'un couple heure/minute donné, soit par clonage (à partir d'une autre montre). Il doit être possible de faire avancer l'heure d'une montre en ajoutant une minute (attention, les minutes sont limitées à 60 et les heures à 24).
+
+Une personne a un nom et peut éventuellement porter une montre. On peut faire porter une montre donnée à une personne, si elle n'en a pas déjà une. On peut aussi lui enlever sa montre si elle en a une. Une personne peut demander l'heure à une autre, qui lui donne l'heure sous forme d'une chaine de caractères, en consultant sa montre si elle en a une (sinon elle peut retourner une chaine vide).
+
+1. Écrivez une classe qui représente les montres telles que décrites ci-dessus.
+1. Créer une montre affichant 13h45 et une autre montre qui est un clone de la première.
+1. Écrivez une classe qui représente les personnes telles que décrites ci-dessus.
+1. On veut faire en sorte que chaque montre ne soit portée que par une seule personne. Proposer des ajouts/modifications des deux classes précédentes pour garantir cela.
+1. Dorénavant, une personne peut porter une montre qui peut être mécanique ou numérique. En utilisant l'héritage, modifier le programme pour prendre ce cas en compte.
+
+## Sources et références
+
+-   [Exercices de Programmation Orientée Objet en Java - MIS](https://home.mis.u-picardie.fr/~furst/docs/exercicesPOO.pdf)
