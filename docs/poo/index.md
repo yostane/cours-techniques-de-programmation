@@ -101,9 +101,13 @@ Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPag
 
 ### Exercice 2
 
-L'héritage est une relation "est". Par exemple, une `Human` et `Monster` sont des `Character` donc on écrira `Human extends Character` et `Monster extends Character`.
+!!! important
 
--   Donner des exemples de relation d'héritage.
+    Cet exercice est purement théorique. Aucun code n'est demandé.
+
+L'héritage est une relation **est**. Par exemple, dans un jeu vidéo, si on suppose qu'un `Human` **est** `Character` (personnage) et qu'un `Monster` (monstre) **est** aussi un `Character`, on écrira `Human extends Character` et `Monster extends Character`.
+
+-   Donner deux exemples de relation d'héritage.
 -   Trouver les relations d'héritage possibles:
     -   Être vivant, homme, animal
     -   Meuble, fauteuil, Armoire, Table, Jardin
