@@ -135,6 +135,14 @@ Une personne a un nom et peut éventuellement porter une montre. Une personne pe
 1. On veut faire en sorte que chaque montre ne soit portée que par une seule personne. Proposer des ajouts/modifications des deux classes précédentes pour garantir cela.
 1. Dorénavant, une personne peut porter une montre qui peut être mécanique ou numérique. En utilisant l'héritage, modifier le programme pour prendre ce cas en compte.
 
+??? "Solution"
+
+    ```ts
+    --8<--
+    poo_ex4.ts
+    --8<--
+    ```
+
 ### Exercice 5
 
 On veut réaliser un programme de gestion des recettes de cuisine. La classe `Ingredient` contient ces membres:
