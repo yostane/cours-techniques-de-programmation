@@ -1,5 +1,6 @@
 class Watch {
   constructor(private hour: number, private minute: number) {}
+
   clone(): Watch {
     return new Watch(this.hour, this.minute);
   }

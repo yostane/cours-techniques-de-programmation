@@ -6,9 +6,12 @@ interface Transporter {
   readonly numberOfPeople: number;
 }
 abstract class Ship {
-  constructor(protected speed: number) {}
-  move() {
-    console.log("Moving at speed", this.speed);
+  constructor(protected speed: number) {
+    console.log("Ship constructor");
+  }
+  abstract move(): void;
+  sayHello() {
+    console.log("Hello");
   }
 }
 
@@ -19,10 +22,15 @@ class SpaceShip extends Ship implements Shooter, Transporter {
     readonly numberOfPeople: number,
     readonly shootPower: number
   ) {
+    console.log("SpaceShip constructor before super");
     super(speed);
+    console.log("SpaceShip constructor after super");
+  }
+  move(): void {
+    console.log("VROOOM");
   }
   shoot(): void {
-    console.log("Shooting with power", this.shootPower);
+    console.log(`Shooting with power ${this.shootPower}`);
   }
 }
 
