@@ -51,9 +51,9 @@ properties_demo.ts
 
 Dans cet exercice, on manipule des formes géométriques que l'on définit par la classe abstraite `GeometricShape`. Cette dernière déclare deux méthodes abstraites `computeArea()` qui renvoie un nombre et `computePerimeter()` qui retourne un nombre.
 
-1.  Définir les classes `Rectangle`, `Square` et `Cicle` qui héritent de la classe `GeometricShape`.
+1.  Définir les classes `Rectangle`, `Square` et `Circle` qui héritent de la classe `GeometricShape`.
 1.  Définir la classe `Drawing` (dessin en Anglais) qui contient une liste de formes géométriques.
-1.  Créer un programme qui instancie deux dessins avec chacun des formes géométriques différentes (4 formes environ par dessin)
+1.  Créer un programme qui instancie deux dessins avec chacun des formes géométriques différentes (4 formes environ par dessin).
 
 ### Exo 2
 
