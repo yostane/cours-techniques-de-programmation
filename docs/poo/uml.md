@@ -28,3 +28,5 @@ Modéliser en UML les diagrammes de classe des cas suivants:
 -   Une école
 -   Un garage de mécanicien
 -   Un jeu de combat en 1v1
+
+Vous pouvez-utiliser [diagrams.net](https://www.diagrams.net/) ou une de ses [extensions VSCode](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
