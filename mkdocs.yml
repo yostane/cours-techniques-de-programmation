@@ -15,6 +15,7 @@ nav:
   - POO:
     - poo/index.md
     - Caractéristiques: poo/caracteristiques.md
+    - Diagramme de classe: poo/uml.md
     - Patrons de conception: poo/patrons.md
     - Compléments et références: poo/further.md
     - Exercices: poo/exos.md
