@@ -30,4 +30,6 @@ Modéliser en UML les diagrammes de classe des cas suivants:
 -   Un jeu de combat en 1v1
 -   Les exercices précédents
 
+Une fois les diagrammes réalisés, coder en TS et créer quelques objets.
+
 Vous pouvez-utiliser [diagrams.net](https://www.diagrams.net/) ou une de ses [extensions VSCode](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)

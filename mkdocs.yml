@@ -17,8 +17,7 @@ nav:
     - Caractéristiques: poo/caracteristiques.md
     - Diagramme de classe: poo/uml.md
     - Patrons de conception: poo/patrons.md
-    - Compléments et références: poo/further.md
-    - Exercices: poo/exos.md
+    - Exercices et compléments: poo/exos.md
     - Mini projet: poo/projet.md
   - Programmation fonctionnelle: func.md
   - Pratiques et styles: avance.md
