@@ -59,7 +59,7 @@ Dans cet exercice, on manipule des formes géométriques que l'on définit par l
 
 Un fermier veut modéliser ses animaux via leurs caractéristiques. Certain animaux peuvent crier, d’autres sont muets. On représentera le fait de crier au moyen d’une méthode affichant à l’écran le cri de l’animal.
 
-1.  Ecrire une interface `Shouter` contenant la méthode permettant de crier qu'on appellera `shout()`.
+1.  Ecrire une interface `Shouter` (crieur en Anglais) contenant la méthode permettant de crier qu'on appellera `shout()`.
 1.  Ecrire les classes des chats `Cat`, des chiens `Dog` et des lapins `Rabbit` (qui sont muets)
 1.  Ecrire un programme avec un tableau pour les animaux qui savent crier, le remplir avec 1 chiens et deux chats, puis faire crier tous ces animaux. Décrire ce qui s’affiche à l’écran à l’exécution de ce programme.
 1.  L'éleveur donne un nom à chacun de ses animaux. Créer la classe abstraite `Animal` avec la propriété `name` qui est la classe mère de tous les animaux.
@@ -69,7 +69,7 @@ Un fermier veut modéliser ses animaux via leurs caractéristiques. Certain anim
     -   Pour info, `if ("shout" in animal)` n'est pas super propre mais c'est la méthode la plus simple pour débuter.
 1.  Le fermier souhaite passer par une propriété calculée à la place de la méthode de la question précédente. Créer une propriété calculée `get shoutingAnimals()` qui retourne le même résultat que `findShoutingAnimals()`.
 1.  Afficher le résultat de la méthode `findShoutingAnimals()` et la valeur de la propriété `get shoutingAnimals()`. Quelle syntaxe préférez-vous ?
-1.  Le fermier élève également un canari (canary en Anglais). Il souhaite en profiter pour modéliser les caractéristiques voler et marcher de ses animaux. Définir la classe `Canary` ainsi que les interfaces `Walker` et `Flyer`. Mettre à jour les classes existantes pour implémenter les interfaces qui leurs correspondent.
+1.  Le fermier élève également un Canari (Canary en Anglais). Il souhaite en profiter pour modéliser les caractéristiques voler et marcher de ses animaux. Définir la classe `Canary` ainsi que les interfaces `Walker` et `Flyer`. Mettre à jour les classes existantes pour implémenter les interfaces qui leurs correspondent.
 1.  Créer une propriété calculée `get FlyingAnimals()` qui retourne une liste d'animaux qui volent.
 
 ## Sources

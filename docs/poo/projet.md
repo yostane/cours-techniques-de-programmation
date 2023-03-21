@@ -17,4 +17,4 @@ Au niveau de l'interaction avec l'utilisateur, vous êtes libres du choix (inter
 -   Définir trois classes qui héritent d'une classe mère abstraite.
 -   Dans la classe mère abstraite, définir une méthode abstraite.
 -   Définir deux interfaces et faire en sorte que les classes implémentent l'une ou l'autre.
--   Filtrer les données par interface implémentée.
+-   Créer une liste de dont les éléments ont le type de la classe abstraite. Implémenter des fonctions de filtrage par type de classe enfant.
