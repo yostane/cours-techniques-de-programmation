@@ -1,11 +1,7 @@
 class Mage {
   private constructor(public name: string, public hp: number) {}
 
-  private static _instance = new Mage("", 0);
-
-  static get instance(): Mage {
-    return this._instance;
-  }
+  static readonly instance = new Mage("", 0);
 }
 
 Mage.instance.hp = 200;
@@ -20,11 +16,7 @@ class ServiceLocator {
     return Mage.instance;
   }
 
-  private static _thief = new Thief("Picflouz", 100);
-
-  static get thief(): Thief {
-    return this._thief;
-  }
+  static readonly thief = new Thief("Picflouz", 100);
 }
 
 console.log(ServiceLocator.mage);
