@@ -94,8 +94,25 @@ Un fermier veut modéliser ses animaux via leurs caractéristiques. Certain anim
 1.  Le fermier élève également un Canari (Canary en Anglais). Il souhaite en profiter pour modéliser les caractéristiques voler et marcher de ses animaux. Définir la classe `Canary` ainsi que les interfaces `Walker` et `Flyer`. Mettre à jour les classes existantes pour implémenter les interfaces qui leurs correspondent.
 1.  Créer une propriété calculée `get FlyingAnimals()` qui retourne une liste d'animaux qui volent.
 
+### Exo 3
+
+1. Créer une classe `Station` qui a deux champs en readonly: `id` de type number et `name` de type string.
+1. Le constructeur ne prend que `name` en argument et `id` est généré via un compteur qui est incrémenté à chaque nouvelle instance créé (astuce, utiliser une propriété statique)
+1. créer trois stations et vérifier que leur id est bien positionné.
+1. définir une méthode `isEqualTo(s: Station)` qui retourne `true` si la station passée en argument à le même `id`
+1. Faire quelques appels de `isEqualTo` sur différentes stations.
+
+### Exo 4
+
+Créer une classe StringUtils qui définit les méthodes statiques suivantes:
+
+1. `askQuestion(message: string): string`: qui retourne une nouvelle chaîne de caractères qui est une concaténation un "?" à `message`
+1. `countVowels(message: string): number` qui retourne le nombre de voyelles dans `message`
+1. `removeVowels(message: string): string` qui retourne une nouvelle chaîne de caractères qui est `message` dépourvu de ses voyelles (en gardant l'ordre des lettres initiales)
+
 ## Sources
 
+-   [cs108_21_final](https://cs108.epfl.ch/archive/21/x/cs108_21_final.pdf)
 -   [TD Programmation Orientée Objet](https://www.irif.fr/~emiquey/enseignement/poo3/TD6.pdf)
 -   [classe abstraite et interface](https://www.u-picardie.fr/ferment/java/chap12_c.html)
 -   [Corrigés des exercices sur les interfaces](https://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa032/docs/corriges-interfaces-1.pdf)

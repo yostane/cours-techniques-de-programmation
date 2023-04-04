@@ -27,3 +27,25 @@ singleton_servicelocator.ts
 factory_builder_demo.ts
 --8<--
 ```
+
+## Exercices
+
+### Exo 1
+
+On souhaite modéliser un garage qui répare des véhicules.
+Un véhicule est identifié par son matricule et a un état `isBroken` de type booléen.
+
+Il n'y qu'une instance de garage possible.
+Le garage est identifié par son nom et permet de réparer un véhicule en basculant l'état `isBroken` à `false`.
+Un véhicule réparé reste en garage tant que son propriétaire n'e l'a pas récupéré.
+Si un véhicule n'est pas en panne, il est immédiatement remis à son propriétaire.
+
+Un propriétaire est identifié par son nom et la listes des véhicules qu'il possède.
+Le propriétaire ne peut pas récupérer un véhicule qu'il ne possède pas.
+
+### Exo 2
+
+Faire l'exercice 5.2 ce [cette série](https://home.mis.u-picardie.fr/~furst/docs/exercicesPOO.pdf) avec les différences suivants:
+
+-   Utiliser TypeScript au lieu de Java
+-   Définir des factory (monteurs) pour instancier les différents enseignants (`createResearcherLecturer()`, etc.)
