@@ -45,6 +45,28 @@ properties_demo.ts
 --8<--
 ```
 
+### Membres statiques
+
+-   Un membre statique d'une classe est utilisable sans créer d'instance particulière
+-   On peut appeler ou accéder à un membre statique depuis le nom de la classe. Certains langages permettent d'y accéder aussi depuis une instance.
+-   Les membres statiques peuvent être considérées comme des variables et fonctions globales, sauf qu'elles sont classées dans une classe
+
+```ts title="Propriétés"
+--8<--
+static_demo.ts
+--8<--
+```
+
+### Polymorphisme
+
+-   Consiste à donner des comportement différents à une méthode selon la classe qui l'implémente et quand on appelle la méthode depuis la classe mère, on aura la méthode de sa classe concrète qui sera appelée
+
+```ts title="Propriétés"
+--8<--
+polymorphism_demo.ts
+--8<--
+```
+
 ## Exercices
 
 ### Exo 1
