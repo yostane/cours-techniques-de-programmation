@@ -63,7 +63,7 @@ static_demo.ts
 
 ```ts title="Propriétés"
 --8<--
-polymorphism_demo.ts
+polymorphisme_demo.ts
 --8<--
 ```
 

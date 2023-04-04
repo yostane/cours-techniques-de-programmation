@@ -1,9 +1,12 @@
 class MathUtils {
+  // doit être appelé depuis la classe
   static readonly PI = 3.14;
+  // doit être appelé depuis la classe
   static add(x: number, y: number): number {
     return x + y;
   }
-  static multiply(x: number, y: number): number {
+  // doit être appelé depuis une instance
+  multiply(x: number, y: number): number {
     return x * y;
   }
 }
@@ -11,7 +14,12 @@ class MathUtils {
 console.log(MathUtils.PI);
 console.log(MathUtils.add(2, 5));
 
+const mu = new MathUtils();
+console.log(mu.multiply(2, 5));
+
+// erreur
+//console.log(MathUtils.multiply(2, 5));
+
 // On ne peut pas appeler du statique depuis un objet en TS
-// const mu = new MathUtils();
 // console.log(mu.PI);
 // console.log(mu.add(2, 5));

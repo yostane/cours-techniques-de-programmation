@@ -1,13 +1,14 @@
 abstract class Shape {
   abstract get area(): number;
-  get name(): string {
-    return "shape";
+  showName() {
+    console.log("shape");
   }
 }
 
 abstract class TwoDimensionShape extends Shape {
-  get name(): string {
-    return "TwoDimensionShape";
+  // surchage (ou override) de showName
+  showName() {
+    console.log("TwoDimensionShape");
   }
 }
 
@@ -20,8 +21,8 @@ class Rectangle extends TwoDimensionShape {
     return this.width * this.height;
   }
 
-  get name(): string {
-    return "Rectangle";
+  showName() {
+    console.log("Rectangle");
   }
 }
 
@@ -30,10 +31,11 @@ class Line extends Shape {
     return 0;
   }
 
-  get name(): string {
-    return "Line";
+  showName() {
+    console.log("Line");
   }
 }
 
 const s: Shape = new Rectangle(10, 100);
-console.log(s.name, s.area);
+console.log(s.area);
+s.showName();
