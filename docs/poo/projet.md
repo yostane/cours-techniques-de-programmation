@@ -15,6 +15,9 @@ Au niveau de l'interaction avec l'utilisateur, vous êtes libres du choix (inter
 ## Eléments requis
 
 -   Définir trois classes qui héritent d'une classe mère abstraite.
+-   Définir au moins deux méthodes et deux propriétés calculée, une avec un getter et l'autre avec un setter.
 -   Dans la classe mère abstraite, définir une méthode abstraite.
 -   Définir deux interfaces et faire en sorte que les classes implémentent l'une ou l'autre.
 -   Créer une liste de dont les éléments ont le type de la classe abstraite. Implémenter des fonctions de filtrage par type de classe enfant.
+-   Réaliser le diagramme UML
+-   Proposer des fonctionnalités supplémentaires
