@@ -1,4 +1,11 @@
-class MathUtils {
+// Méthode globale (pas conseillée si on veut suivre l'orienté objet)
+export function subsctract(x: number, y: number): number {
+  return x - y;
+}
+
+export const gravity = 10;
+
+export class MathUtils {
   // doit être appelé depuis la classe
   static readonly PI = 3.14;
   // doit être appelé depuis la classe

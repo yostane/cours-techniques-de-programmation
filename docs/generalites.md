@@ -19,6 +19,25 @@ tags:
     -   Typage dynamique: le type d'une variable ou d'un argument peut changer.
 -   Si le compilateur déduit le type d'une donnée dans certaines situation sans qu'on ait à l'expliciter, on dit que c'est un **typage implicite**. C'est aussi appelé **l'inférence de types**.
 
+Préfixer ses classes, fonctions, variables et constantes par `export` permet de les rendre accessibles dans d'autres fichiers.
+
+```ts title="static_demo.ts"
+--8<--
+static_demo.ts
+--8<--
+```
+
+Des clauses `import` en début de fichier permettent d'utiliser des symboles exportés par d'autres fichiers.
+[Le doc de MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) montre les différentes syntaxes possibles de la clause `import`.
+
+```ts title="static_demo.ts"
+--8<--
+import_demo.ts
+--8<--
+```
+
+## Export et import en TypeScript
+
 ```ts title="Quick tour of TypeScript"
 --8<--
 ts_tour.ts
