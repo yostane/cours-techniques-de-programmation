@@ -12,14 +12,16 @@ L'interface ne sera pas notée donc une application console suffit.
 
 ## Eléments requis
 
--   Faire un CRUD
--   Définir trois classes qui héritent d'une classe mère abstraite.
--   Définir au moins deux méthodes et deux propriétés calculée, une avec un getter et l'autre avec un setter.
--   Surcharger une de vos méthodes.
--   Définir une méthode statique.
--   Définir un singleton et créer une factory.
--   Dans la classe mère abstraite, définir une méthode abstraite.
--   Définir deux interfaces et faire en sorte que les classes implémentent l'une ou l'autre.
--   Créer une liste de dont les éléments ont le type de la classe abstraite. Implémenter des fonctions de filtrage par type de classe enfant.
--   Réaliser le diagramme UML
--   Proposer des fonctionnalités supplémentaires
+-   Définir trois classes qui héritent d'une classe mère abstraite. (1)
+-   Créer une liste de dont les éléments ont le type de la classe abstraite. (1)
+-   Implémenter des fonctions de filtrage par type de classe enfant. (2)
+-   Définir au moins deux méthodes. (1)
+-   Définir au moins deux propriétés calculées, une avec un getter et l'autre avec un setter. (2)
+-   Faire un CRUD sur cette liste (2)
+-   Surcharger une de vos méthodes. (1)
+-   Définir une méthode statique. (1)
+-   Définir un singleton et créer une factory. (2)
+-   Dans la classe mère abstraite, définir une méthode abstraite. (1)
+-   Définir deux interfaces et faire en sorte que les classes implémentent l'une ou l'autre. (2)
+-   Réaliser le diagramme UML (2)
+-   Proposer des choses supplémentaires liées à la POO (2)
