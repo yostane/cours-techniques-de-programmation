@@ -18,7 +18,7 @@ L'interface ne sera pas notée donc une application console suffit.
 -   Définir au moins deux méthodes. (1)
 -   Définir au moins deux propriétés calculées, une avec un getter et l'autre avec un setter. (2)
 -   Faire un CRUD sur cette liste (2)
--   Surcharger une de vos méthodes. (1)
+-   Redéfinir (override) une de vos méthodes. (1)
 -   Définir une méthode statique. (1)
 -   Définir un singleton et créer une factory. (2)
 -   Dans la classe mère abstraite, définir une méthode abstraite. (1)

@@ -30,7 +30,7 @@ static_demo.ts
 Des clauses `import` en début de fichier permettent d'utiliser des symboles exportés par d'autres fichiers.
 [Le doc de MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) montre les différentes syntaxes possibles de la clause `import`.
 
-```ts title="static_demo.ts"
+```ts title="import_demo.ts"
 --8<--
 import_demo.ts
 --8<--
