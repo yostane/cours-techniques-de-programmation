@@ -15,8 +15,8 @@ class Bus implements Transporter {
   constructor(readonly capacity: number) {}
 }
 
+// Fabrique (ou Factory)
 function createTransporter(capacity: number): Transporter {
-  // Can change type without changing caller
   return new Bus(capacity);
   //return new SpaceShip(10, 1, 4, 2200);
 }
@@ -24,6 +24,7 @@ function createTransporter(capacity: number): Transporter {
 const transporter = createTransporter(2);
 console.log(transporter);
 
+// Monteur (ou Builder)
 class TransporterBuilder {
   private capacity = 0;
   constructor() {}
