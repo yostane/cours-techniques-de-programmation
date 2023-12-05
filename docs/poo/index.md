@@ -43,11 +43,19 @@ Quels avantages et inconvénients voyez-vous dans ce code ?
 
 ## Vue d'ensemble
 
--   La poo permet de modéliser les éléments qu'on veut traiter sous forme d'**objets**.
--   Un objet contient des **membres** (propriétés et méthodes).
--   Un objet peut être **créé** (ou **instancié**) de différentes façons:
-    -   Les techniques communes: à partir d'une **classe** ou objets **littéraux**.
-    -   Techniques avancées: Singletons, monteurs (Builders), Injection de dépendances.
+- La poo permet de modéliser les éléments qu'on veut traiter sous forme d'**objets**.
+- Un objet contient des **membres** (propriétés et méthodes).
+- Un objet peut être **créé** (ou **instancié**) de différentes façons:
+  - Les techniques communes: à partir d'une **classe** ou objets **littéraux**.
+  - Techniques avancées: Singletons, monteurs (Builders), Injection de dépendances.
+
+=== "Python"
+
+    ```py title="Définition d'une classe"
+    --8<--
+    python/poo_01.py
+    --8<--
+    ```
 
 ### Exercice
 
@@ -62,22 +70,22 @@ Dans le code donné plus haut, identifier avec des commentaires les parties qui 
 
 ## Classes et héritage simple
 
--   Une classe définit l'ensemble des membres ses instances auront.
--   Une classe peut être définie:
-    -   A partir de zéro,
-    -   Ou à partie d'une autre classe. :bulb: Cette technique s'appelle **l'héritage simple**,
-    -   Ou à partie de plusieurs classes. :bulb: Cette technique s'appelle **l'héritage multiple**. :boom: Très peu de langages proposent cette option.
--   Une classe peut aussi implémenter des interfaces.
--   Le **constructeur** est la première fonction qui est appelée lors de l'instanciation d'un objet.
-    -   Certains constructeurs permettent d'initialiser les propriétés avec peu de code.
--   Certains langages permettent de définir des **modificateurs de visibilité** pour ses membres. Voici les plus communs:
-    -   `private`: membre utilisable uniquement par sa classe.
-    -   `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
-    -   `public`: membres utilisables depuis n'import où.
--   D'autres modificateur peuvent être proposés selon le langage:
-    -   `abstract`: rend le membre abstrait
-    -   `readonly`: propriété publique en lecture seule (comme un `const`)
-    -   `static`: le membre existera tout le temps en un exemplaire accessible avec le nom de la classe
+- Une classe définit l'ensemble des membres ses instances auront.
+- Une classe peut être définie:
+  - A partir de zéro,
+  - Ou à partie d'une autre classe. :bulb: Cette technique s'appelle **l'héritage simple**,
+  - Ou à partie de plusieurs classes. :bulb: Cette technique s'appelle **l'héritage multiple**. :boom: Très peu de langages proposent cette option.
+- Une classe peut aussi implémenter des interfaces.
+- Le **constructeur** est la première fonction qui est appelée lors de l'instanciation d'un objet.
+  - Certains constructeurs permettent d'initialiser les propriétés avec peu de code.
+- Certains langages permettent de définir des **modificateurs de visibilité** pour ses membres. Voici les plus communs:
+  - `private`: membre utilisable uniquement par sa classe.
+  - `protected`: membre utilisable uniquement par sa classe ou celles qui en héritent.
+  - `public`: membres utilisables depuis n'import où.
+- D'autres modificateur peuvent être proposés selon le langage:
+  - `abstract`: rend le membre abstrait
+  - `readonly`: propriété publique en lecture seule (comme un `const`)
+  - `static`: le membre existera tout le temps en un exemplaire accessible avec le nom de la classe
 
 ```ts title="Définition de deux classes dont une qui hérite de l'autre"
 --8<--
@@ -91,13 +99,13 @@ classes.ts
 
 Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et en `protected`: `markedPage: number`.
 
--   Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
--   Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres. ⚠ Il une relation entre `Library` et `Book` mais ce n'est pas une relation d'héritage. Pour ce cas, on dit que c'est une **agrégation**.
--   Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs.
--   Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres.
--   Instancier une `Library` avec trois livres
--   Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
--   Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
+- Dans la classe `Book`, définir une méthode `markPage(page: number)` qui permet de mettre à jour la valeur de `markedPage` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nbPages`.
+- Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres. ⚠ Il une relation entre `Library` et `Book` mais ce n'est pas une relation d'héritage. Pour ce cas, on dit que c'est une **agrégation**.
+- Dans la classe `Library`, définir une méthode `listAuthors()` qui retourne un tableau contenant uniquement les noms des auteurs.
+- Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres.
+- Instancier une `Library` avec trois livres
+- Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
+- Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
 
 ### Exercice 2
 
@@ -107,19 +115,19 @@ Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPag
 
 L'héritage est une relation **est**. Par exemple, dans un jeu vidéo, si on suppose qu'un `Human` **est** `Character` (personnage) et qu'un `Monster` (monstre) **est** aussi un `Character`, on écrira `Human extends Character` et `Monster extends Character`.
 
--   Donner deux exemples de relation d'héritage.
--   Trouver les relations d'héritage possibles:
-    -   Être vivant, homme, animal
-    -   Meuble, fauteuil, Armoire, Table, Jardin
-    -   Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
+- Donner deux exemples de relation d'héritage.
+- Trouver les relations d'héritage possibles:
+  - Être vivant, homme, animal
+  - Meuble, fauteuil, Armoire, Table, Jardin
+  - Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
 
 ### Exercice 3
 
 Essayer de trouver ou d'inventer une classe parent commune (qu'on appelle aussi classe mère) pour ces classes:
 
--   Ordinateur portable, ordinateur fixe
--   Ordinateur portable, ordinateur fixe, Switch, Xbox, Playstation
--   Voiture, Camion, Vélo, Trottinette
+- Ordinateur portable, ordinateur fixe
+- Ordinateur portable, ordinateur fixe, Switch, Xbox, Playstation
+- Voiture, Camion, Vélo, Trottinette
 
 ### Exercice 4
 
@@ -147,9 +155,9 @@ Une personne a un nom et peut éventuellement porter une montre. Une personne pe
 
 On veut réaliser un programme de gestion des recettes de cuisine. La classe `Ingredient` contient ces membres:
 
--   `name`, `state` et `unit` de type `string`
--   `quantity` de type `number`
--   Le constructeur initialise les propriétés ci-dessus via 4 arguments qui lui seront passés.
+- `name`, `state` et `unit` de type `string`
+- `quantity` de type `number`
+- Le constructeur initialise les propriétés ci-dessus via 4 arguments qui lui seront passés.
 
 L'état d'un ingrédient (son `state`) peut être: `cooked` (cuit), `raw` (cru), `whole` (entier), ou `cut` (découpé) ou une combinaison de ces états (par exemple cuit et entier). L'unité peut être une unité de poids (`g`, `kg`, etc), de volume (`l`, `ml`, `cl`) ou simplement une `cadrinality` (cardinalité ou nombre de pièces).
 
@@ -166,4 +174,4 @@ La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une l
 
 ## Sources et références
 
--   [Exercices de Programmation Orientée Objet en Java - MIS](https://home.mis.u-picardie.fr/~furst/docs/exercicesPOO.pdf)
+- [Exercices de Programmation Orientée Objet en Java - MIS](https://home.mis.u-picardie.fr/~furst/docs/exercicesPOO.pdf)

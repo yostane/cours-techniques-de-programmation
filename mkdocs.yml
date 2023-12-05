@@ -13,12 +13,12 @@ nav:
   - Introduction: index.md
   - Généralités: generalites.md
   - POO:
-    - poo/index.md
-    - Caractéristiques: poo/caracteristiques.md
-    - Diagramme de classe: poo/uml.md
-    - Patrons de conception: poo/patrons.md
-    - Exercices et compléments: poo/exos.md
-    - Mini projet: poo/projet.md
+      - poo/index.md
+      - Caractéristiques: poo/caracteristiques.md
+      - Diagramme de classe: poo/uml.md
+      - Patrons de conception: poo/patrons.md
+      - Exercices et compléments: poo/exos.md
+      - Mini projet: poo/projet.md
   - Programmation fonctionnelle: func.md
   - Pratiques et styles: avance.md
   - Mini-projet: projet.md
@@ -35,6 +35,7 @@ theme:
   features:
     - navigation.top
     - navigation.indexes
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -57,6 +58,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - def_list
   - pymdownx.inlinehilite
   - attr_list
