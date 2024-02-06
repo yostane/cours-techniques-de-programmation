@@ -95,7 +95,7 @@ classes.ts
 
 ## Exercices
 
-### Exercice 1
+### Exercice 1 TS
 
 Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et en `protected`: `markedPage: number`.
 
@@ -105,6 +105,18 @@ Définir une classe `Book` avec les propriétés suivantes en `readonly`: `nbPag
 - Dans la classe `Library`, définir une méthode `sumOfMarkedPages()` qui retourne la somme des `markedPage` de tous les livres.
 - Instancier une `Library` avec trois livres
 - Afficher les résultats des appels des méthodes `listAuthors()` et `sumOfMarkedPages()`.
+- Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
+
+### Exercice 1 Python
+
+Définir une classe `Book` avec les propriétés suivantes Python: `nb_pages: number, author: string, isbn: string` ([ISBN (The International Standard Book Number)](https://en.wikipedia.org/wiki/ISBN)) et `marked_Page: number`.
+
+- Dans la classe `Book`, définir une méthode `mark_page(self, page)` qui permet de mettre à jour la valeur de `marked_page` avec la valeur de l'argument `page`. ⚠ bien vérifier que `page` soit < à `nb_pages`.
+- Créer une classe `Library` (Bibliothèque) qui contient un tableau de livres. ⚠ Il une relation entre `Library` et `Book` mais ce n'est pas une relation d'héritage. Pour ce cas, on dit que c'est une **agrégation**.
+- Dans la classe `Library`, définir une méthode `list_authors()` qui retourne un tableau contenant uniquement les noms des auteurs.
+- Dans la classe `Library`, définir une méthode `sum_of_marked_pages()` qui retourne la somme des `marked_page` de tous les livres.
+- Instancier une `Library` avec trois livres
+- Afficher les résultats des appels des méthodes `list_authors()` et `sum_of_marked_pages()`.
 - Est-ce que la classe `Book` peuvent exister et être utilisée indépendamment de `Library` ?
 
 ### Exercice 2
