@@ -81,13 +81,17 @@ La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une l
 1. Définir les classe `Ingredient` et `Dish`
 1. Créer un plat appelé choucroute contenant comme ingrédients : 500g de choucroute cuite, 150g de lard cuit et entier et 2 saucisses entières et cuites
 1. On veut pouvoir comparer les plats et donc leurs ingrédients. Ajoutez une méthode `equals` dans la classe Ingrédient qui renvoie true si deux ingrédients ont le même nom d'aliment et le même état (pas forcément la même quantité).
-1. Ajoutez une méthode `equals` dans la classe Plat, qui renvoie true si deux plats contiennent les mêmes ingrédients, au sens donné juste avant.
+1. Ajoutez une méthode `equals` dans la classe `Dish` qui prend en argument un plat, qui renvoie true si deux plats contiennent les mêmes ingrédients, au sens donné juste avant.
+    - Si vous faites l'exercice en Python, appeler plutôt cette méthode `__eq__`. Comparer des plats avec le `==`. Que constatez vous ?
+
+## Héritage
+
+### Exercice 3 (suite)
+
 1. On veut faire la distinction entre les ingrédients qu'on peut cuire et ceux qu'on peut découper. Un ingrédient qu'on peut cuire doit avoir une méthode `cook()` qui le fait passer dans l'état `cooked` et une température de cuisson. Un ingrédient qu'on peut découper doit avoir une méthode `cut()` qui le fait passer dans l'état `cut`.
     - En utilisant uniquement l'héritage, proposer une solution à ce problème
     - En utilisant utilisant l'héritage et les interfaces, proposer une solution alternative à ce problème
     - Laquelle des deux solutions vous semble la meilleure ?
-
-## Héritage
 
 ### Exercice 4
 
