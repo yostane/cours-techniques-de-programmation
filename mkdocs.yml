@@ -14,6 +14,8 @@ nav:
   - Généralités: generalites.md
   - POO:
       - poo/index.md
+      - Classes et héritage: poo/classes_heritage.md
+      - Exercices série 1: poo/classes_heritage_exercices.md
       - Caractéristiques: poo/caracteristiques.md
       - Diagramme de classe: poo/uml.md
       - Patrons de conception: poo/patrons.md
