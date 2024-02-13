@@ -42,7 +42,7 @@ On souhaite représenter des montres et les personnes qui les portent.
 
 Une montre donne l'heure et les minutes. On peut initialiser une montre soit à partir d'un couple heure/minute donné, soit par clonage (en créant une nouvelle montre à partir d'une montre existante). Il doit être possible de faire **avancer** l'heure d'une montre en ajoutant une minute (attention, les minutes sont limitées à 60 et les heures à 24).
 
-Une personne a un nom et peut éventuellement porter une montre. Une personne peut **porter** une montre donnée, si elle n'en a pas déjà une. Elle peut aussi **enlever** sa montre si elle en a une. Une personne peut **demander l'heure** à une autre, qui lui donne l'heure sous forme d'une chaine de caractères, en consultant sa montre si elle en a une (sinon elle peut retourner une chaine vide).
+Une personne a un nom et peut éventuellement porter une montre. Une personne peut **porter** une montre donnée, si elle n'en a pas déjà une. Elle peut aussi **enlever** sa montre si elle en porte une. Une personne peut **demander l'heure** à une autre personne, qui lui donne l'heure sous forme d'une chaîne de caractères, en consultant sa montre si elle en a une (sinon elle peut retourner une chaine vide).
 
 1. Écrivez une classe qui représente les montres telles que décrites ci-dessus.
 1. Créer une montre affichant 13h45 et une autre montre qui est un clone de la première.
@@ -62,7 +62,7 @@ Une personne a un nom et peut éventuellement porter une montre. Une personne pe
 
     ```py
     --8<--
-
+    python/poo_exo_watch.py
     --8<--
     ```
 
@@ -83,6 +83,14 @@ La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une l
 1. On veut pouvoir comparer les plats et donc leurs ingrédients. Ajoutez une méthode `equals` dans la classe Ingrédient qui renvoie true si deux ingrédients ont le même nom d'aliment et le même état (pas forcément la même quantité).
 1. Ajoutez une méthode `equals` dans la classe `Dish` qui prend en argument un plat, qui renvoie true si deux plats contiennent les mêmes ingrédients, au sens donné juste avant.
     - Si vous faites l'exercice en Python, appeler plutôt cette méthode `__eq__`. Comparer des plats avec le `==`. Que constatez vous ?
+
+??? "Solution en Python"
+
+    ```py
+    --8<--
+    python/poo_exo_cooking.py
+    --8<--
+    ```
 
 ### Exercice 4
 
