@@ -48,7 +48,7 @@ Une personne a un nom et peut éventuellement porter une montre. Une personne pe
 1. Créer une montre affichant 13h45 et une autre montre qui est un clone de la première.
 1. Écrivez une classe qui représente les personnes telles que décrites ci-dessus.
 1. On veut faire en sorte que chaque montre ne soit portée que par une seule personne. Proposer des ajouts/modifications des deux classes précédentes pour garantir cela.
-1. Dorénavant, une personne peut porter une montre qui peut être mécanique ou numérique. En utilisant l'héritage, modifier le programme pour prendre ce cas en compte.
+1. Dorénavant, une personne peut porter une montre qui peut être mécanique ou numérique.
 
 ??? "Solution en TS"
 
@@ -84,6 +84,13 @@ La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une l
 1. Ajoutez une méthode `equals` dans la classe `Dish` qui prend en argument un plat, qui renvoie true si deux plats contiennent les mêmes ingrédients, au sens donné juste avant.
     - Si vous faites l'exercice en Python, appeler plutôt cette méthode `__eq__`. Comparer des plats avec le `==`. Que constatez vous ?
 
+### Exercice 4
+
+Un `Fisherman` (pêcheur) a un nom,  plusieurs `FishingRod` (cannes à pêche).
+Chaque
+
+Modéliser les classes `Fisherman`
+
 ## Héritage
 
 ### Exercice 3 (suite)
@@ -93,7 +100,7 @@ La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une l
     - En utilisant utilisant l'héritage et les interfaces, proposer une solution alternative à ce problème
     - Laquelle des deux solutions vous semble la meilleure ?
 
-### Exercice 4
+### Exercice 2.1
 
 !!! important
 
@@ -107,7 +114,7 @@ L'héritage est une relation **est**. Par exemple, dans un jeu vidéo, si on sup
   - Meuble, fauteuil, Armoire, Table, Jardin
   - Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
 
-### Exercice 5
+### Exercice 2.2
 
 Essayer de modéliser une classe parente commune (qu'on appelle aussi classe mère) pour ces classes:
 
