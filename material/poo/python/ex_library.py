@@ -1,5 +1,6 @@
 class Book:
     def __init__(self, nb_pages, title, author, isbn) -> None:
+        """ " Constructeur: permet d'initialiser les propriétés"""
         self.nb_pages = nb_pages
         self.title = title
         self.author = author
@@ -34,7 +35,7 @@ class Library:
         return sum
 
     def sum_of_marked_pages_method_2(self):
-        return [book.marked_page for book in self.books].sum()
+        return sum([book.marked_page for book in self.books])
 
 
 book1 = Book(
@@ -43,6 +44,7 @@ book1 = Book(
     "Object-Oriented Thought Process, The (Developer's Library)",
     "978-0135181966",
 )
+
 book2 = Book(230, "Jon Bodner", "Learning Go", "978-1098139292")
 
 book1.mark_page(-1)
@@ -59,3 +61,10 @@ books = [
 books[-1].mark_page(33)
 
 library = Library(books)
+print("list of authors method 1", library.list_authors_method_1())
+print("list of authors method 2", library.list_authors_method_2())
+print(
+    "sum of marked pages",
+    library.sum_of_marked_pages_method_1(),
+    library.sum_of_marked_pages_method_2(),
+)
