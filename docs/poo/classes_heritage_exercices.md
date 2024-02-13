@@ -81,8 +81,11 @@ La classe `Dish` (plat) représente les plats, chaque plat ayant un nom et une l
 1. Définir les classe `Ingredient` et `Dish`
 1. Créer un plat appelé choucroute contenant comme ingrédients : 500g de choucroute cuite, 150g de lard cuit et entier et 2 saucisses entières et cuites
 1. On veut pouvoir comparer les plats et donc leurs ingrédients. Ajoutez une méthode `equals` dans la classe Ingrédient qui renvoie true si deux ingrédients ont le même nom d'aliment et le même état (pas forcément la même quantité).
+    - Si vous faites l'exercice en Python, appeler plutôt cette méthode `__eq__`. Comparer des plats avec le `==`. Que constatez vous ?
+1. Vérifier l'égalité entre quelques ingrédients
 1. Ajoutez une méthode `equals` dans la classe `Dish` qui prend en argument un plat, qui renvoie true si deux plats contiennent les mêmes ingrédients, au sens donné juste avant.
     - Si vous faites l'exercice en Python, appeler plutôt cette méthode `__eq__`. Comparer des plats avec le `==`. Que constatez vous ?
+1. Vérifier l'égalité entre quelques plats
 
 ??? "Solution en Python"
 
