@@ -28,3 +28,14 @@ show_sport_room(sp)
 
 print(items)
 print(sp)
+
+x = 10
+
+
+def show_int(value):
+    value = 20
+    print(value)
+
+
+show_int(x)
+print(x)
