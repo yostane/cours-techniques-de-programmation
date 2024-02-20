@@ -1,4 +1,5 @@
 numbers = [3, 49, 2, -29, 17]
+numbers.append(1000)
 
 print(len(numbers))
 
@@ -19,3 +20,7 @@ for i in range(10, 100001, 1000):
     print(i)
 
 print("done")
+
+# les Tuples n'acceptent pas d'ajout ou de suppression d'éléments ni changer d'élements
+t1 = (1, 3, 10, 555)
+print(t1)
