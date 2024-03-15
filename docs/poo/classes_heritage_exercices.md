@@ -102,16 +102,18 @@ Chaque
 
 Modéliser les classes `Fisherman`
 
-## Héritage
+## Série2: Héritage et champs statiques
 
-### Exercice 3 (suite)
+### Exercice 2.1
+
+Cet exercice est la suite de l'exo3
 
 1. On veut faire la distinction entre les ingrédients qu'on peut cuire et ceux qu'on peut découper. Un ingrédient qu'on peut cuire doit avoir une méthode `cook()` qui le fait passer dans l'état `cooked` et une température de cuisson. Un ingrédient qu'on peut découper doit avoir une méthode `cut()` qui le fait passer dans l'état `cut`.
     - En utilisant uniquement l'héritage, proposer une solution à ce problème
     - En utilisant utilisant l'héritage et les interfaces, proposer une solution alternative à ce problème
     - Laquelle des deux solutions vous semble la meilleure ?
 
-### Exercice 2.1
+### Exercice 2.2
 
 !!! important
 
@@ -121,17 +123,51 @@ L'héritage est une relation **est**. Par exemple, dans un jeu vidéo, si on sup
 
 - Donner deux exemples de relation d'héritage.
 - Trouver les relations d'héritage possibles:
-  - Être vivant, homme, animal
-  - Meuble, fauteuil, Armoire, Table, Jardin
-  - Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
+    - Être vivant, homme, animal
+    - Meuble, fauteuil, Armoire, Table, Jardin
+    - Aliment, Pâtisserie, Mille-Feuilles, Croissant, Pain
 
-### Exercice 2.2
+### Exercice 2.3
 
 Essayer de modéliser une classe parente commune (qu'on appelle aussi classe mère) pour ces classes:
 
 - Ordinateur portable, ordinateur fixe
 - Ordinateur portable, ordinateur fixe, Switch, Xbox, Playstation
 - Voiture, Camion, Vélo, Trottinette
+
+### Exercice 2.4
+
+Définir la class `StringUtils` qui contient les méthodes statiques suivantes:
+
+- `get_first(str)`: retourne le premier caractère de la chaîne passée en argument.
+- `get_last(str)`: retourne le dernier caractère de la chaîne passée en argument.
+- `get_substring(str, first, last)`: retourne la sous-chaîne comprise entre les index first (inclus) et last (exclu).
+
+Ajoutes les propriétés statiques suivantes:
+
+- `new_line = "\n"`
+- `tab = "\t"`
+
+Utiliser les différentes propriétés et appeler les différentes méthodes.
+
+### Exercice 2.5
+
+Nous souhaitons définir les classes d'un futur jeu MOBA qui va cartonner sévère.
+Le jeu sera en 2D en vue du dessus.
+Dans ce jeu nous aurons des héros qui affrontent des monstres.
+
+Les héroes et les monstres ont tous des HP (points de vie), des MP (points de magie), un nom, une position dans la carte et une hitbox (rectangle de détection des dégâts).
+
+Un héro peut être soit un tank, soit un mage, soit un soigneur ou soit un guerrier.
+Chaque héro a un niveau et une compétence propre.
+Tous les héros commencent au niveau 1 avec un valeur de HP et MP aléatoires.
+Les guerriers commencent avec 0 MP.
+
+Un monstre peut être soit un minion, soit un buldozer.
+
+Nous souhaitons compter le nombre d'instances de chaque héro créé et le nombre d'instances de chaque monstre créé depuis le début du programme.
+
+Définir les différentes classes.
 
 ## Sources et références
 
