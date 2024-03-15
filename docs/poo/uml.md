@@ -8,10 +8,10 @@ Un diagramme de classe est tout dessin qui permet de représenter: les classes, 
 
 ## Rappel des relations
 
--   Héritage: relation "est un"
--   Implémentation: nom de l'héritage pour les interfaces
--   Composition: A a une ou plusieurs instances de B et B est détruit si A est détruit (en d'autres termes B dépend A). Exemple: les chambres d'une maison.
--   Agrégation: A a une ou plusieurs instances de B et B n'est pas forcément détruit si A est détruit (en d'autres termes B ne dépend pas de A). Exemple: le moteur d'une voiture.
+- Héritage: relation "est un"
+- Implémentation: nom de l'héritage pour les interfaces
+- Composition: A a une ou plusieurs instances de B et B est détruit si A est détruit (en d'autres termes B dépend A). Exemple: les chambres d'une maison.
+- Agrégation: A a une ou plusieurs instances de B et B n'est pas forcément détruit si A est détruit (en d'autres termes B ne dépend pas de A). Exemple: le moteur d'une voiture.
 
 ## Les diagrammes de classe UML
 
@@ -25,10 +25,10 @@ Parmi ces différents types de diagrammes, on trouve les diagrammes de classe.
 
 Modéliser en UML les diagrammes de classe des cas suivants:
 
--   Une école
--   Un garage de mécanicien
--   Un jeu de combat en 1v1
--   Les exercices précédents
+- Une école
+- Un garage de mécanicien
+- Un jeu de combat en 1v1
+- Les exercices précédents
 
 Une fois les diagrammes réalisés, coder en TS et créer quelques objets.
 
