@@ -110,8 +110,8 @@ Cet exercice est la suite de l'exo3
 
 1. On veut faire la distinction entre les ingrédients qu'on peut cuire et ceux qu'on peut découper. Un ingrédient qu'on peut cuire doit avoir une méthode `cook()` qui le fait passer dans l'état `cooked` et une température de cuisson. Un ingrédient qu'on peut découper doit avoir une méthode `cut()` qui le fait passer dans l'état `cut`.
     - En utilisant uniquement l'héritage, proposer une solution à ce problème
-    - En utilisant utilisant l'héritage et les interfaces, proposer une solution alternative à ce problème
-    - Laquelle des deux solutions vous semble la meilleure ?
+    - (⚠ à ne pas faire en Python) En utilisant utilisant l'héritage et les interfaces, proposer une solution alternative à ce problème
+    - (⚠ à ne pas faire en Python) Laquelle des deux solutions vous semble la meilleure ?
 
 ### Exercice 2.2
 
