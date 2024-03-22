@@ -34,7 +34,7 @@ class Human(LivingBeing):
         # Composition
         self.brain = Brain(brain_volume)
         self.hands = [Hand(3), Hand(12)]
-        # Aggrégation
+        # Agrégation
         self.heart = heart
 
     def walk(self, distance):
