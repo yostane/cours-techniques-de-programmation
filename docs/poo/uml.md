@@ -46,6 +46,7 @@ Dessiner le diagramme de classes UML pour chacun groupe de classes (1 diagramme 
 - Meuble, Armoire, Table, Jardin, Chambre, Maison
 - Pâtisserie, Mille-Feuilles, Pain, Farine, Sel, Sucre
 - Voiture, Camion, Vélo, Roue, Moteur, Volant
+- Voiture, Berline, SUV, Roue, Moteur, Personne, Commercial, Mécanicien, GarageAutombile
 
 ### Exercice 2
 
