@@ -37,6 +37,30 @@ Ce diagramme permet d'obtenir le code suivant:
 
 ## Exercices
 
+Pour dessiner les diagrammes UML, vous pouvez-utiliser [diagrams.net](https://www.diagrams.net/) ou [cette extension VSCode](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
+
+### Exercice 1
+
+Dessiner le diagramme de classes UML pour chacun groupe de classes (1 diagramme par cas):
+
+- Meuble, Armoire, Table, Jardin, Chambre, Maison
+- Pâtisserie, Mille-Feuilles, Pain, Farine, Sel, Sucre
+- Voiture, Camion, Vélo, Roue, Moteur, Volant
+
+### Exercice 2
+
+Soit le diagramme UML suivant:
+
+![Exemple UML](./img/uml02.drawio.svg)
+
+Apporter les modifications suivantes au diagramme:
+
+- L'être humain a un corps. Ce dernier a un cerveau, des mains et un coeur.
+- Un animal est un être vivant qui a aussi un coprs
+- Une plante est un être vivant (qui n'a pas de corps)
+
+### Exercice 3
+
 Modéliser en UML les diagrammes de classe des cas suivants:
 
 - Une école
@@ -45,5 +69,3 @@ Modéliser en UML les diagrammes de classe des cas suivants:
 - Les exercices précédents
 
 Une fois les diagrammes réalisés, coder en TS et créer quelques objets.
-
-Vous pouvez-utiliser [diagrams.net](https://www.diagrams.net/) ou une de ses [extensions VSCode](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
