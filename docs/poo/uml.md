@@ -48,6 +48,8 @@ Dessiner le diagramme de classes UML pour chacun groupe de classes (1 diagramme 
 - Voiture, Camion, Vélo, Roue, Moteur, Volant
 - Voiture, Berline, SUV, Roue, Moteur, Personne, Commercial, Mécanicien, GarageAutombile
 
+Coder en python un des cas.
+
 ### Exercice 2
 
 Soit le diagramme UML suivant:
