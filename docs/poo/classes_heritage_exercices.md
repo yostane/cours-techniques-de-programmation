@@ -169,6 +169,22 @@ Nous souhaitons compter le nombre d'instances de chaque héro créé et le nombr
 
 Définir les différentes classes.
 
+### Exercice 2.6
+
+Une école propose des formations des cours à des étudiants. Les cours sont assurés par des intervenants. Chaque étudiant ou intervenants a un numéro de sécurité sociale qui est de type `string`, un nom, un prénom. Chaque cours est identifié par son nom et l'enseignant qui l'assure. Chaque étudiant a une liste de cours qu'il suit durant l'année.
+
+Développer un script python qui définit un enseignant en "informatique" et deux enseignants en "maths". Vous pouvez valoriser les autres propriétés à votre guise, tant qu'elles sont valides.
+
+A l'aide de la fonction `input`, faire en sorte que votre script permette de créer un profil étudiant qui peut choisir deux cours (un cours d'info et un de math ou deux de maths). L'étudiant doit saisir toutes ses informations.
+
+### Exercice 2.7
+
+- On souhaite modéliser un collection de consoles et jeux rétro. Les consoles et les jeux rétro sont des appareil de divertissement les propriétés: `name`, `releaseYear` en commun. Les consoles ont en plus la propriété: `companyName` (la société qui l'a créé). Les jeux vidéos ont comme propriété supplémentaire: l'éditeur du jeu (celui qui le distribue) ainsi que son développeur. On aimerait aussi savoir s'il est indépendant ou pas.
+- Définir les classes nécessaires.
+- Chaque jeu vidéo tient une liste des consoles compatibles (pour les jeux cross-platform) via la propriété: `platforms`.
+- `VideoGameConsole` contient en plus la propriété: `companyName` de type string.
+- Compléter la définition des classes et instancier quelques jeux et consoles.
+
 ## Sources et références
 
 - [Exercices de Programmation Orientée Objet en Java - MIS](https://home.mis.u-picardie.fr/~furst/docs/exercicesPOO.pdf)
