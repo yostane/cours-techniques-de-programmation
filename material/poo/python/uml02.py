@@ -20,18 +20,25 @@ class Hand:
         print("👍")
 
 
+class Heart:
+    pass
+
+
 class Human(LivingBeing):
     def __init__(
-        self, name, birth_date, social_security_number, height, hands, brain_volume
+        self, name, birth_date, social_security_number, height, heart, brain_volume
     ) -> None:
         super().__init__(name, birth_date)
         self.social_security_number = social_security_number
         self.height = height
+        # Composition
         self.brain = Brain(brain_volume)
-        self.hands = hands
+        self.hands = [Hand(3), Hand(12)]
+        # Aggrégation
+        self.heart = heart
 
     def walk(self, distance):
-        print(f"🚶 during {distance}")
+        print(f"🚶 during {distance} KM")
 
     def sleep(self, duration):
         print(f"It's time to 😴 for {duration} minutes")
@@ -40,12 +47,10 @@ class Human(LivingBeing):
         print(f"🗣️: {sentence}")
 
 
-human1_hands = [Hand(3), Hand(12)]
-human1 = Human(
-    "Rémie", datetime.datetime(2003, 8, 15), 1_987_687_686, 175, human1_hands, 2
-)
+heart = Heart()
+human1 = Human("Rémie", datetime.datetime(2003, 8, 15), 1_987_687_686, 175, heart, 2)
 
-print("brain volume", human1.brain.volume)
+print("brain volume", human1.brain.volume, "M3")
 human1.sleep(10)
 human1.walk(2000)
 human1.talk("hahaha")

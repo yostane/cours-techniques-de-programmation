@@ -19,7 +19,21 @@ UML est une norme qui définit comment représenter différents types de diagram
 Parmi ces différents types de diagrammes, on trouve les diagrammes de classe.
 [Cet aide-mémoire](https://khalilstemmler.com/articles/uml-cheatsheet/) permet de voir les grandes lignes.
 
+## Exemple 1
+
 ![Exemple UML](./img/uml01.png)
+
+## Exemple 2
+
+![Exemple UML](./img/uml02.drawio.svg)
+
+Ce diagramme permet d'obtenir le code suivant:
+
+```py title="Code correspondant du diagramme UML"
+    --8<--
+    python/uml02.py
+    --8<--
+```
 
 ## Exercices
 
