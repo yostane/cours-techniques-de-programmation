@@ -150,6 +150,14 @@ Ajoutes les propriétés statiques suivantes:
 
 Utiliser les différentes propriétés et appeler les différentes méthodes.
 
+??? "Solution en Python"
+
+    ```py
+    --8<--
+    python/StringUtils.py
+    --8<--
+    ```
+
 ### Exercice 2.5
 
 Nous souhaitons définir les classes d'un futur jeu MOBA qui va cartonner sévère.

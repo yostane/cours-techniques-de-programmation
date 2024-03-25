@@ -46,7 +46,7 @@ Dessiner le diagramme de classes UML pour chacun groupe de classes (1 diagramme 
 - Meuble, Armoire, Table, Jardin, Chambre, Maison
 - Pâtisserie, Mille-Feuilles, Pain, Farine, Sel, Sucre
 - Voiture, Camion, Vélo, Roue, Moteur, Volant
-- Voiture, Berline, SUV, Roue, Moteur, Personne, Commercial, Mécanicien, GarageAutombile
+- Voiture, Berline, SUV, Roue, Moteur, Personne, Commercial, Mécanicien, GarageAutomobile
 
 Coder en python un des cas.
 
@@ -59,7 +59,7 @@ Soit le diagramme UML suivant:
 Apporter les modifications suivantes au diagramme:
 
 - L'être humain a un corps. Ce dernier a un cerveau, des mains et un coeur.
-- Un animal est un être vivant qui a aussi un coprs
+- Un animal est un être vivant qui a aussi un corps
 - Une plante est un être vivant (qui n'a pas de corps)
 
 ### Exercice 3
