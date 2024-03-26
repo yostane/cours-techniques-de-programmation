@@ -52,7 +52,17 @@ Dessiner le diagramme de classes UML pour chacun groupe de classes (1 diagramme 
 
 Coder en python un des cas.
 
+#### Solution du dernier cas
+
 ![Exemple UML](./img/ex1-garage.drawio.svg)
+
+??? "Solution en Python"
+
+    ```py
+    --8<--
+    python/exo_uml_garage.py
+    --8<--
+    ```
 
 ### Exercice 2
 
