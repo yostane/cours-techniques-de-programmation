@@ -9,7 +9,9 @@ class Moteur:
 class Voiture:
     def __init__(self, roues, moteur) -> None:
         if len(roues) < 3 or len(roues) > 5:
-            raise Exception("Pass assez de roues")
+            raise Exception(
+                "Pass assez de roues" if len(roues) < 3 else "Trop de roues"
+            )
         self.roues = roues
         self.moteur = moteur
 
@@ -48,7 +50,10 @@ roues2 = [Roue()] * 3
 moteur = Moteur()
 voitures = [Berline(roues1, Moteur()), Suv(roues2, moteur)]
 
-Berline([Roue()])
+# Berline([Roue()], Moteur())
 
 garage = GarageAutomobile(voitures, personnes)
-GarageAutomobile([], [])
+# GarageAutomobile([], [])
+
+print(len(garage.personnes))
+print(len(garage.voitures))
