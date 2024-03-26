@@ -187,7 +187,7 @@ A l'aide de la fonction `input`, faire en sorte que votre script permette de cr�
 
 ### Exercice 2.7
 
-- On souhaite modéliser un collection de consoles et jeux rétro. Les consoles et les jeux rétro sont des appareil de divertissement les propriétés: `name`, `releaseYear` en commun. Les consoles ont en plus la propriété: `companyName` (la société qui l'a créé). Les jeux vidéos ont comme propriété supplémentaire: l'éditeur du jeu (celui qui le distribue) ainsi que son développeur. On aimerait aussi savoir s'il est indépendant ou pas.
+- On souhaite modéliser une collection de consoles et jeux rétro. Les consoles et les jeux rétro sont des appareil de divertissement les propriétés: `name`, `releaseYear` en commun. Les consoles ont en plus la propriété: `companyName` (la société qui l'a créé). Les jeux vidéos ont comme propriété supplémentaire: l'éditeur du jeu (celui qui le distribue) ainsi que son développeur. On aimerait aussi savoir s'il est indépendant ou pas.
 - Définir les classes nécessaires.
 - Chaque jeu vidéo tient une liste des consoles compatibles (pour les jeux cross-platform) via la propriété: `platforms`.
 - `VideoGameConsole` contient en plus la propriété: `companyName` de type string.
