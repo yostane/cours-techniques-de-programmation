@@ -12,8 +12,10 @@ Un diagramme de classe est tout dessin qui permet de représenter: les classes, 
 - Implémentation: nom de l'héritage pour les interfaces
 - Composition: A a une ou plusieurs instances de B et B est détruit si A est détruit (en d'autres termes B dépend A). Exemple: les chambres d'une maison.
 - Agrégation: A a une ou plusieurs instances de B et B n'est pas forcément détruit si A est détruit (en d'autres termes B ne dépend pas de A). Exemple: le moteur d'une voiture.
-- Association unidirectionnelle: A peut appeler les méthodes et propriétés de B mais pas l'inverse
-- Association bidirectionnelle: A peut appeler les méthodes et propriétés de B et inversement
+- Association:
+    - Association unidirectionnelle: A peut appeler les méthodes et propriétés de B mais pas l'inverse
+    - Association bidirectionnelle: A peut appeler les méthodes et propriétés de B et inversement
+    - Association avec soi-même: A peut appeler les méthodes et propriétés de d'une autre instance de A
 
 ## Les diagrammes de classe UML
 
@@ -24,6 +26,14 @@ Parmi ces différents types de diagrammes, on trouve les diagrammes de classe.
 ## Exemple 1
 
 ![Exemple UML](./img/uml01.drawio.svg)
+
+??? "Ce code illustre la relation d'association `soigner` et `eat` uniquement"
+
+    ```py
+    --8<--
+    python/association_demo01.py
+    --8<--
+    ```
 
 ## Exemple 2
 
