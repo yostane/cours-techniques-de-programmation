@@ -50,7 +50,10 @@ roues2 = [Roue()] * 3
 moteur = Moteur()
 voitures = [Berline(roues1, Moteur()), Suv(roues2, moteur)]
 
-# Berline([Roue()], Moteur())
+try:
+    Berline([Roue()], Moteur())
+except:
+    print("N'a pas pu créer la Berline")
 
 garage = GarageAutomobile(voitures, personnes)
 # GarageAutomobile([], [])
