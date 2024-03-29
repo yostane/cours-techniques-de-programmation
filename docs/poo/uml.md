@@ -124,11 +124,16 @@ On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et
 - Soit écouter une vidéo, un audio ou texte audio,
 - Soit louer un texte ou texte audio. Un texte loué sera rendu 4 jours après.
 
+👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+
 👉 Ecrire un programme qui réalise cette simulation pendant 1 mois (30 jours).
 
 👉 A la fin du mois, afficher des statistiques sur le nombre de films et textes loués ainsi que le nombre d'éléments écoutés.
 
 Le propriétaire de la médiathèque permet de faire du CRUD (Create, Read, Update, Delete) sur la médiathèque.
 
-👉 Développer les différentes du CRUD
+👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+
+👉 Développer les différentes méthodes CRUD
+
 👉 Effectuer ces actions via le propriétaire: ajouter une vidéo, afficher le contenu d'un texte, modifier un texte et supprimer un audio
