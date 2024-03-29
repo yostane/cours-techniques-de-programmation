@@ -118,7 +118,7 @@ On doit pouvoir stocker différents types de médias : audio, vidéo, texte (com
 
 On souhaite simuler l'interaction des humains avec la médiathèque. Chaque jour, une seule personne entre dans la médiathèque et ressort le même jour.
 Chaque personne effectue une seule action puis ressort.
-On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et peut effectuer une de ces actions **alétoirement**:
+On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et peut effectuer une de ces actions **aléatoirement**:
 
 - Soit louer un film. Un film loué sera rendu deux jours après,
 - Soit écouter une vidéo, un audio ou texte audio,
@@ -127,3 +127,8 @@ On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et
 👉 Ecrire un programme qui réalise cette simulation pendant 1 mois (30 jours).
 
 👉 A la fin du mois, afficher des statistiques sur le nombre de films et textes loués ainsi que le nombre d'éléments écoutés.
+
+Le propriétaire de la médiathèque permet de faire du CRUD (Create, Read, Update, Delete) sur la médiathèque.
+
+👉 Développer les différentes du CRUD
+👉 Effectuer ces actions via le propriétaire: ajouter une vidéo, afficher le contenu d'un texte, modifier un texte et supprimer un audio
