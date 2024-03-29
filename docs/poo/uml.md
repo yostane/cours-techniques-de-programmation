@@ -100,7 +100,6 @@ On doit pouvoir stocker différents types de médias : audio, vidéo, texte (com
 - Chaque objet d’un de ces médias doit avoir au minimum un nom, un format, une taille (en octets).
 - On veut pouvoir trier les médias selon le nom ou la taille par ordre croissant ou décroissant.
 - Un texte contient en plus une propriété "contenu" ainsi que deux méthodes supplémentaires, la première renvoie le nombre de consonnes du contenu, la deuxième le nombre de mots du contenu.
-- La médiathèque est un singleton.
 
 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
 
