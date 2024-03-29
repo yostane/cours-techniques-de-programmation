@@ -90,3 +90,40 @@ Modéliser en UML les diagrammes de classe des cas suivants:
 - Les exercices précédents
 
 Une fois les diagrammes réalisés, coder en TS et créer quelques objets.
+
+### Exercice 4
+
+Développer une programme de gestion d’une médiathèque.
+On doit pouvoir stocker différents types de médias : audio, vidéo, texte (comme un livre ou un journal).
+
+- Les audio et vidéo peuvent être écoutés, le texte peut être lu et les vidéos peuvent être visualisées.
+- Chaque objet d’un de ces médias doit avoir au minimum un nom, un format, une taille (en octets).
+- On veut pouvoir trier les médias selon le nom ou la taille par ordre croissant ou décroissant.
+- Un texte contient en plus une propriété "contenu" ainsi que deux méthodes supplémentaires, la première renvoie le nombre de consonnes du contenu, la deuxième le nombre de mots du contenu.
+- La médiathèque est un singleton.
+
+👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+
+👉 Instancier une médiathèque contenant deux audios, une vidéo et trois textes. Vous êtes libre de valoriser les propriétés à votre guise. Vous pouvez vous faire aider de certains sites si besoin ([générateur de texte](https://fr.lipsum.com/), [Générateur de nom de livre](https://blog.reedsy.com/book-title-generator/))
+
+👉 Afficher la médias triés par nom par ordre croissant et par taille par ordre décroissant.
+
+👉 Afficher le nombre de consonnes
+
+- On souhaite aussi stocker stocker des textes audio qui sont des textes qu'on peut écouter.
+
+👉 Dessiner le nouveau diagramme UML de classes UML et mettre à jour votre code en conséquence.
+
+👉 Ajouter deux textes audio dans la médiathèque
+
+On souhaite simuler l'interaction des humains avec la médiathèque. Chaque jour, une seule personne entre dans la médiathèque et ressort le même jour.
+Chaque personne effectue une seule action puis ressort.
+On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et peut effectuer une de ces actions **alétoirement**:
+
+- Soit louer un film. Un film loué sera rendu deux jours après,
+- Soit écouter une vidéo, un audio ou texte audio,
+- Soit louer un texte ou texte audio. Un texte loué sera rendu 4 jours après.
+
+👉 Ecrire un programme qui réalise cette simulation pendant 1 mois (30 jours).
+
+👉 A la fin du mois, afficher des statistiques sur le nombre de films et textes loués ainsi que le nombre d'éléments écoutés.
