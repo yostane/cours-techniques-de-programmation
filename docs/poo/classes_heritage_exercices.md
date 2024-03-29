@@ -177,6 +177,16 @@ Nous souhaitons compter le nombre d'instances de chaque héro créé et le nombr
 
 Définir les différentes classes.
 
+??? Corrigé (partiel)
+
+    ![solution uml moba](./img/ex_moba.drawio.svg)
+
+    ```py
+    --8<--
+    python/ex_moba.py
+    --8<--
+    ```
+
 ### Exercice 2.6
 
 Une école propose des formations des cours à des étudiants. Les cours sont assurés par des intervenants. Chaque étudiant ou intervenants a un numéro de sécurité sociale qui est de type `string`, un nom, un prénom. Chaque cours est identifié par son nom et l'enseignant qui l'assure. Chaque étudiant a une liste de cours qu'il suit durant l'année.

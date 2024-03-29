@@ -89,7 +89,7 @@ Modéliser en UML les diagrammes de classe des cas suivants:
 - Un jeu de combat en 1v1
 - Les exercices précédents
 
-Une fois les diagrammes réalisés, coder en TS et créer quelques objets.
+Une fois les diagrammes réalisés, coder les classes et instancier quelques objets.
 
 ### Exercice 4
 
