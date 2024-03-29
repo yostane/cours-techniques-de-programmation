@@ -177,7 +177,7 @@ Nous souhaitons compter le nombre d'instances de chaque héro créé et le nombr
 
 Définir les différentes classes.
 
-??? Corrigé (partiel)
+??? "Corrigé (encore incomplet)"
 
     ![solution uml moba](./img/ex_moba.drawio.svg)
 
