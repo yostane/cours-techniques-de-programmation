@@ -51,7 +51,7 @@ Dessiner le diagramme de classes UML pour chacun groupe de classes (1 diagramme 
 
 - Meuble, Armoire, Table, Jardin, Chambre, Maison
 - Pâtisserie, Mille-Feuilles, Pain, Farine, Sel, Sucre
-- Voiture, Camion, Vélo, Roue, Moteur, Volant
+- Véhicule, Voiture, Camion, Vélo, Roue, Moteur, Volant
 - Voiture, Berline, SUV, Roue, Moteur, Personne, Commercial, Mécanicien, GarageAutomobile
 
 Coder en python un des cas.
@@ -105,11 +105,11 @@ On doit pouvoir stocker différents types de médias : audio, vidéo, texte (com
 
 👉 Instancier une médiathèque contenant deux audios, une vidéo et trois textes. Vous êtes libre de valoriser les propriétés à votre guise. Vous pouvez vous faire aider de certains sites si besoin ([générateur de texte](https://fr.lipsum.com/), [Générateur de nom de livre](https://blog.reedsy.com/book-title-generator/))
 
-👉 Afficher la médias triés par nom par ordre croissant et par taille par ordre décroissant.
+👉 Afficher les médias triés par nom par ordre croissant et par taille par ordre décroissant.
 
 👉 Afficher le nombre de consonnes
 
-- On souhaite aussi stocker stocker des textes audio qui sont des textes qu'on peut écouter.
+- On souhaite aussi stocker des textes audio qui sont des textes qu'on peut écouter.
 
 👉 Dessiner le nouveau diagramme UML de classes UML et mettre à jour votre code en conséquence.
 
