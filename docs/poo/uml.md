@@ -29,24 +29,16 @@ Parmi ces différents types de diagrammes, on trouve les diagrammes de classe.
 
 ## Exemple 2
 
-![Exemple UML](./img/uml02.drawio.svg)
+![Exemple UML2](./img/uml02.drawio.svg)
 
 Ce diagramme permet d'obtenir le code suivant:
 
-??? "Code correspondant du diagramme UML sans les associations"
+??? "Code correspondant au diagramme de classe diagramme UML"
 
     ```py
         --8<--
         python/uml02.py
         --8<--
-    ```
-
-??? "Ce code illustre la relation d'association `soigner` et `eat` uniquement"
-
-    ```py
-    --8<--
-    python/association_demo01.py
-    --8<--
     ```
 
 ## Exercices

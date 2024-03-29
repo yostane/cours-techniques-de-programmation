@@ -1,9 +1,9 @@
-class Apple:
+class Fruit:
     def __init__(self) -> None:
         self.weight = 10
 
     def __str__(self) -> str:
-        return f"Apple: weight -> {self.weight}"
+        return f"Fruit: weight -> {self.weight}"
 
 
 class Human:
@@ -23,8 +23,8 @@ class Human:
         return f"Human: hp -> {self.hp}"
 
 
-a1 = Apple()
-a2 = Apple()
+a1 = Fruit()
+a2 = Fruit()
 
 h1 = Human()
 h2 = Human()
