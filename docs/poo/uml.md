@@ -76,7 +76,7 @@ Soit le diagramme UML suivant:
 
 Apporter les modifications suivantes au diagramme:
 
-- L'être humain a un corps. Ce dernier a un cerveau, des mains et un coeur.
+- L'être humain a un corps. Tout corps a un cerveau, des mains et un coeur.
 - Un animal est un être vivant qui a aussi un corps
 - Une plante est un être vivant (qui n'a pas de corps)
 
