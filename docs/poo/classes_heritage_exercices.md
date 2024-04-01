@@ -164,14 +164,14 @@ Nous souhaitons définir les classes d'un futur jeu MOBA qui va cartonner sévè
 Le jeu sera en 2D en vue du dessus.
 Dans ce jeu nous aurons des héros qui affrontent des monstres.
 
-Les héroes et les monstres ont tous des HP (points de vie), des MP (points de magie), un nom, une position dans la carte et une hitbox (rectangle de détection des dégâts).
+Les héros et les monstres ont tous des HP (points de vie), des MP (points de magie), un nom, une position dans la carte et une *hitbox* (rectangle de détection des dégâts).
 
 Un héro peut être soit un tank, soit un mage, soit un soigneur ou soit un guerrier.
-Chaque héro a un niveau et une compétence propre.
-Tous les héros commencent au niveau 1 avec un valeur de HP et MP aléatoires.
+Chaque héro a un niveau et une compétence propre (le héros fait 10 dêgats, le mage fait 20 dégâts et perd 5 mp, le tank donne 2 de ses hp et le soigneur fait gagner 30 hp et perd 8 mp).
+Tous les héros commencent au niveau 1 avec un valeur de HP et MP aléatoires compris entre 100 et 200 et entre 50 et 100 respectivement.
 Les guerriers commencent avec 0 MP.
 
-Un monstre peut être soit un minion, soit un buldozer.
+Un monstre peut être soit un minion, soit un buldozer. Les monstres ont 0 MP et ont des hp aléatoires compris entre 30 et 70.
 
 Nous souhaitons compter le nombre d'instances de chaque héro créé et le nombre d'instances de chaque monstre créé depuis le début du programme.
 
