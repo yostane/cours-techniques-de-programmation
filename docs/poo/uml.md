@@ -101,41 +101,35 @@ On doit pouvoir stocker différents types de médias : audio, vidéo, texte (com
 - On veut pouvoir trier les médias selon le nom ou la taille par ordre croissant ou décroissant.
 - Un texte contient en plus une propriété "contenu" ainsi que deux méthodes supplémentaires, la première renvoie le nombre de consonnes du contenu, la deuxième le nombre de mots du contenu.
 
-👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+- 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+- 👉 Instancier une médiathèque contenant deux audios, une vidéo et trois textes. Vous êtes libre de valoriser les propriétés à votre guise. Vous pouvez vous faire aider de certains sites si besoin ([générateur de texte](https://fr.lipsum.com/), [Générateur de nom de livre](https://blog.reedsy.com/book-title-generator/))
 
-👉 Instancier une médiathèque contenant deux audios, une vidéo et trois textes. Vous êtes libre de valoriser les propriétés à votre guise. Vous pouvez vous faire aider de certains sites si besoin ([générateur de texte](https://fr.lipsum.com/), [Générateur de nom de livre](https://blog.reedsy.com/book-title-generator/))
+- 👉 Afficher les médias triés par nom par ordre croissant et par taille par ordre décroissant.
+- 👉 Afficher le nombre de consonnes de tous les textes de la médithèque
+- 👉 Afficher le nombre de consonnes de tous les textes de la médithèque
 
-👉 Afficher les médias triés par nom par ordre croissant et par taille par ordre décroissant.
+On souhaite aussi stocker des textes audio qui sont des textes qu'on peut écouter.
 
-👉 Afficher le nombre de consonnes
-
-- On souhaite aussi stocker des textes audio qui sont des textes qu'on peut écouter.
-
-👉 Dessiner le nouveau diagramme UML de classes UML et mettre à jour votre code en conséquence.
-
-👉 Ajouter deux textes audio dans la médiathèque
+- 👉 Dessiner le nouveau diagramme UML de classes UML et mettre à jour votre code en conséquence.
+- 👉 Ajouter deux textes audio dans la médiathèque
 
 On souhaite simuler l'interaction des humains avec la médiathèque. Chaque jour, une seule personne entre dans la médiathèque et ressort le même jour.
 Chaque personne effectue une seule action puis ressort.
 On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et peut effectuer une de ces actions **aléatoirement**:
 
-- Soit louer un film. Un film loué sera rendu deux jours après,
-- Soit louer un texte ou un audio. Un texte ou un audio loué sera rendu 4 jours après,
-- Soit écouter une vidéo, un audio ou texte audio.
+- Soit louer une vidéo disponible (non loué). Un film loué sera rendu après 10 jours,
+- Soit louer un texte ou un audio disponible (non loué). Un texte loué sera rendu dans 4 et un audio dans 5 jours,
+- Soit écouter une vidéo, un audio ou texte audio disponible (non loué).
 
-👉 Dessiner le diagramme de classes UML et coder les différentes classes.
-
-👉 Ecrire un programme qui réalise cette simulation pendant 1 mois (30 jours).
-
-👉 A la fin du mois, afficher des statistiques sur le nombre de films et textes loués ainsi que le nombre d'éléments écoutés.
+- 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+- 👉 Ecrire un programme qui réalise cette simulation pendant 1 mois (30 jours).
+- 👉 A la fin du mois, afficher des statistiques sur le nombre de films et textes loués ainsi que le nombre d'éléments écoutés.
 
 Le propriétaire de la médiathèque permet de faire du CRUD (Create, Read, Update, Delete) sur la médiathèque. Une personne peut être propriétaire d'une seule médiathèques.
 
-👉 Dessiner le diagramme de classes UML et coder les différentes classes.
-
-👉 Développer les différentes méthodes CRUD
-
-👉 Effectuer ces actions via le propriétaire: ajouter une vidéo, afficher le contenu d'un texte, modifier un texte et supprimer un audio
+- 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
+- 👉 Développer les différentes méthodes CRUD
+- 👉 Effectuer ces actions via le propriétaire: ajouter une vidéo, afficher le contenu d'un texte, modifier un texte et supprimer un audio
 
 ??? "Corrigé"
 
