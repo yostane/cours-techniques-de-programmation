@@ -174,6 +174,7 @@ print(owner.media_library)
 owner.read_media(2)
 
 
+print("simulation sur 30 jours")
 for day in range(30):
     media_library.advance_rental()
     print("nouvelle journée")

@@ -101,6 +101,8 @@ On doit pouvoir stocker différents types de médias : audio, vidéo, texte (com
 - On veut pouvoir trier les médias selon le nom ou la taille par ordre croissant ou décroissant.
 - Un texte contient en plus une propriété "contenu" ainsi que deux méthodes supplémentaires, la première renvoie le nombre de consonnes du contenu, la deuxième le nombre de mots du contenu.
 
+Questions :
+
 - 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
 - 👉 Instancier une médiathèque contenant deux audios, une vidéo et trois textes. Vous êtes libre de valoriser les propriétés à votre guise. Vous pouvez vous faire aider de certains sites si besoin ([générateur de texte](https://fr.lipsum.com/), [Générateur de nom de livre](https://blog.reedsy.com/book-title-generator/))
 
