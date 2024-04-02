@@ -97,7 +97,7 @@ Développer une programme de gestion d’une médiathèque.
 On doit pouvoir stocker différents types de médias : audio, vidéo, texte (comme un livre ou un journal).
 
 - Les audio et vidéo peuvent être écoutés, le texte peut être lu et les vidéos peuvent être visualisées.
-- Chaque objet d’un de ces médias doit avoir au minimum un nom, un format, une taille (en octets).
+- Chaque objet d’un de ces médias doit avoir au minimum un nom, un format (l'extension du fichier), une taille (en octets).
 - On veut pouvoir trier les médias selon le nom ou la taille par ordre croissant ou décroissant.
 - Un texte contient en plus une propriété "contenu" ainsi que deux méthodes supplémentaires, la première renvoie le nombre de consonnes du contenu, la deuxième le nombre de mots du contenu.
 
@@ -120,8 +120,8 @@ Chaque personne effectue une seule action puis ressort.
 On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et peut effectuer une de ces actions **aléatoirement**:
 
 - Soit louer un film. Un film loué sera rendu deux jours après,
-- Soit écouter une vidéo, un audio ou texte audio,
-- Soit louer un texte ou texte audio. Un texte loué sera rendu 4 jours après.
+- Soit louer un texte ou un audio. Un texte ou un audio loué sera rendu 4 jours après,
+- Soit écouter une vidéo, un audio ou texte audio.
 
 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
 
@@ -129,7 +129,7 @@ On suppose qu'il n'y a qu'une seule personne dans la médiathèque à la fois et
 
 👉 A la fin du mois, afficher des statistiques sur le nombre de films et textes loués ainsi que le nombre d'éléments écoutés.
 
-Le propriétaire de la médiathèque permet de faire du CRUD (Create, Read, Update, Delete) sur la médiathèque.
+Le propriétaire de la médiathèque permet de faire du CRUD (Create, Read, Update, Delete) sur la médiathèque. Une personne peut être propriétaire d'une seule médiathèques.
 
 👉 Dessiner le diagramme de classes UML et coder les différentes classes.
 

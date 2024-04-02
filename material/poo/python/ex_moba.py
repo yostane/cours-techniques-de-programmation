@@ -8,14 +8,14 @@ class Point:
 
 
 class Rectangle:
-    def __init__(self, p, width, height) -> None:
+    def __init__(self, p: Point, width: int, height: int) -> None:
         self.p = p
         self.width = width
         self.height = height
 
 
 class Character:
-    def __init__(self, name, hp, mp, position, hitbox) -> None:
+    def __init__(self, name, hp, mp, position: Point, hitbox: Rectangle) -> None:
         self.name = name
         self.hp = hp
         self.mp = mp
@@ -23,6 +23,7 @@ class Character:
         self.hitbox = hitbox
 
     def __str__(self) -> str:
+        """ " __nom__ -> dunder (jargon python)"""
         return (
             f"{self.__class__.__name__} (name={self.name}, hp={self.hp}, mp={self.mp})"
         )
@@ -41,9 +42,9 @@ class Hero(Character):
 
     def attack(self, monster):
         monster.hp -= 2
-        print(self, "inflige deux de dégâts. Nouvel état du monstre", monster)
+        print(self, "inflige 2 de dégâts. Nouvel état du monstre", monster)
 
-    def performSkill(self, character):
+    def perform_skill(self, character):
         print(
             self,
             "a appliqué une compétence a un personnage dont le nouvel état est:",
@@ -56,36 +57,36 @@ class Warrior(Hero):
         super().__init__(name, position, hitbox)
         self.mp = 0
 
-    def performSkill(self, character):
+    def perform_skill(self, character):
         character.hp = max(character.hp - 10, 0)
-        super().performSkill(self, character)
+        super().perform_skill(self, character)
 
 
 class Mage(Hero):
-    def performSkill(self, character):
+    def perform_skill(self, character):
         if self.mp < 5:
             return
         character.hp = max(character.hp - 20, 0)
         self.mp -= 5
-        super().performSkill(character)
+        super().perform_skill(character)
 
 
 class Tank(Hero):
-    def performSkill(self, character):
+    def perform_skill(self, character):
         if self.hp < 2:
             return
         character.hp += 2
         self.hp -= 2
-        super().performSkill(character)
+        super().perform_skill(character)
 
 
 class Healer(Hero):
-    def performSkill(self, character):
+    def perform_skill(self, character):
         if self.mp < 8:
             return
         character.hp += 30
         self.mp -= 8
-        super().performSkill(character)
+        super().perform_skill(character)
 
 
 class Monster(Character):
@@ -94,8 +95,8 @@ class Monster(Character):
         super().__init__(name, hp, 0, position, hitbox)
 
     def attack(self, hero):
-        print(self, "inflige deux de dégâts. Nouvel état du héro", hero)
         hero.hp -= 1
+        print(self, "inflige 1 de dégât. Nouvel état du héro", hero)
 
 
 class Minion(Monster):
@@ -155,4 +156,5 @@ print("héros", heroes)
 print("monstres", monsters)
 
 warrior.attack(b1)
-mage.performSkill(minion1)
+mage.perform_skill(minion1)
+healer.perform_skill(mage)
