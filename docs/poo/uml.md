@@ -136,3 +136,13 @@ Le propriétaire de la médiathèque permet de faire du CRUD (Create, Read, Upda
 👉 Développer les différentes méthodes CRUD
 
 👉 Effectuer ces actions via le propriétaire: ajouter une vidéo, afficher le contenu d'un texte, modifier un texte et supprimer un audio
+
+??? "Corrigé"
+
+    ![solution uml mediathèque](./img/ex_mediatheque.drawio.svg)
+
+    ```py
+    --8<--
+    python/ex_mediatheque.py
+    --8<--
+    ```

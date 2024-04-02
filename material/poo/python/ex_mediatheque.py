@@ -59,7 +59,7 @@ class Text(Media):
         return len([x not in "aiueo" for x in self.content])
 
 
-class Mediatheque:
+class MediaLibrary:
     def __init__(self, medias: List[Media]) -> None:
         self.medias = medias
 
@@ -76,7 +76,7 @@ class Person:
     def __init__(self):
         pass
 
-    def perform_random_action(self, mediatheque: Mediatheque):
+    def perform_random_action(self, mediatheque: MediaLibrary):
         action = random.randint(0, 2)
         if action == 0:
             videos = [
@@ -99,7 +99,7 @@ class Person:
 
 
 class Owner(Person):
-    def __init__(self, mediatheque: Mediatheque):
+    def __init__(self, mediatheque: MediaLibrary):
         super().__init__()
         self.mediatheque = mediatheque
 
@@ -117,7 +117,7 @@ class Owner(Person):
         self.mediatheque.medias.pop(index)
 
 
-mediatheque = Mediatheque(
+mediatheque = MediaLibrary(
     [
         Audio("Grand bleu", "mp3", 3_000_000),
         Audio("Chouzetsu Dynamic", "mp3", 3_000_000),
