@@ -107,8 +107,8 @@ Questions :
 - 👉 Instancier une médiathèque contenant deux audios, une vidéo et trois textes. Vous êtes libre de valoriser les propriétés à votre guise. Vous pouvez vous faire aider de certains sites si besoin ([générateur de texte](https://fr.lipsum.com/), [Générateur de nom de livre](https://blog.reedsy.com/book-title-generator/))
 
 - 👉 Afficher les médias triés par nom par ordre croissant et par taille par ordre décroissant.
-- 👉 Afficher le nombre de consonnes de tous les textes de la médithèque
-- 👉 Afficher le nombre de consonnes de tous les textes de la médithèque
+- 👉 Afficher le nombre de consonnes de tous les textes de la médiathèque
+- 👉 Afficher le nombre de consonnes de tous les textes de la médiathèque
 
 On souhaite aussi stocker des textes audio qui sont des textes qu'on peut écouter.
 
